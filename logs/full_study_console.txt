@@ -1,0 +1,532 @@
+Episode: 5977/6000 | Episode reward: -10.94 | Episode steps: 24 | Average reward: -14.82 | Step Count: 143448 | Episode Q0: -11.21
+Episode: 5978/6000 | Episode reward: -14.84 | Episode steps: 24 | Average reward: -14.74 | Step Count: 143472 | Episode Q0: -16.33
+Episode: 5979/6000 | Episode reward: -12.80 | Episode steps: 24 | Average reward: -14.61 | Step Count: 143496 | Episode Q0: -14.26
+Episode: 5980/6000 | Episode reward: -12.02 | Episode steps: 24 | Average reward: -14.59 | Step Count: 143520 | Episode Q0: -12.10
+Episode: 5981/6000 | Episode reward: -17.88 | Episode steps: 24 | Average reward: -14.61 | Step Count: 143544 | Episode Q0: -17.41
+Episode: 5982/6000 | Episode reward: -12.81 | Episode steps: 24 | Average reward: -14.49 | Step Count: 143568 | Episode Q0: -14.92
+Episode: 5983/6000 | Episode reward: -13.21 | Episode steps: 24 | Average reward: -14.38 | Step Count: 143592 | Episode Q0: -14.22
+Episode: 5984/6000 | Episode reward: -9.60 | Episode steps: 24 | Average reward: -14.19 | Step Count: 143616 | Episode Q0: -10.48
+Episode: 5985/6000 | Episode reward: -16.62 | Episode steps: 24 | Average reward: -14.20 | Step Count: 143640 | Episode Q0: -16.81
+Episode: 5986/6000 | Episode reward: -10.44 | Episode steps: 24 | Average reward: -14.18 | Step Count: 143664 | Episode Q0: -12.36
+Episode: 5987/6000 | Episode reward: -14.83 | Episode steps: 24 | Average reward: -14.20 | Step Count: 143688 | Episode Q0: -15.77
+Episode: 5988/6000 | Episode reward: -15.38 | Episode steps: 24 | Average reward: -14.10 | Step Count: 143712 | Episode Q0: -15.05
+Episode: 5989/6000 | Episode reward: -11.61 | Episode steps: 24 | Average reward: -14.06 | Step Count: 143736 | Episode Q0: -14.32
+Episode: 5990/6000 | Episode reward: -11.32 | Episode steps: 24 | Average reward: -13.99 | Step Count: 143760 | Episode Q0: -13.09
+Episode: 5991/6000 | Episode reward: -12.94 | Episode steps: 24 | Average reward: -14.05 | Step Count: 143784 | Episode Q0: -14.51
+Episode: 5992/6000 | Episode reward: -11.15 | Episode steps: 24 | Average reward: -13.92 | Step Count: 143808 | Episode Q0: -11.15
+Episode: 5993/6000 | Episode reward: -16.58 | Episode steps: 24 | Average reward: -14.03 | Step Count: 143832 | Episode Q0: -16.00
+Episode: 5994/6000 | Episode reward: -11.76 | Episode steps: 24 | Average reward: -13.96 | Step Count: 143856 | Episode Q0: -12.11
+Episode: 5995/6000 | Episode reward: -15.95 | Episode steps: 24 | Average reward: -13.98 | Step Count: 143880 | Episode Q0: -14.73
+Episode: 5996/6000 | Episode reward: -15.06 | Episode steps: 24 | Average reward: -13.99 | Step Count: 143904 | Episode Q0: -15.36
+Episode: 5997/6000 | Episode reward: -16.57 | Episode steps: 24 | Average reward: -14.00 | Step Count: 143928 | Episode Q0: -15.18
+Episode: 5998/6000 | Episode reward: -10.81 | Episode steps: 24 | Average reward: -13.94 | Step Count: 143952 | Episode Q0: -10.20
+Episode: 5999/6000 | Episode reward: -11.12 | Episode steps: 24 | Average reward: -13.95 | Step Count: 143976 | Episode Q0: -10.93
+Episode: 6000/6000 | Episode reward: -11.01 | Episode steps: 24 | Average reward: -13.89 | Step Count: 144000 | Episode Q0: -10.83
+Best 50-episode average: -10.886 at episode 3265
+Final 50-episode average: -13.891
+NOTE: the final policy is meaningfully worse than the best one
+reached during training. Consider LOADBESTCHECKPOINT.
+--- Policy diagnostic (120 steps) ---
+Switching per step : 0.5332
+Saturated components : 12.7%
+State sensitivity : 1.9783
+Violation rate : 0.66%
+Mean action per channel: [0.4 0.21 -0.7 -0.99 0.18 -0.04 0.12 0.26 0.21]
+VERDICT: policy looks healthy.
+Training finished in 818.3 s. Agent saved to results\trained_ppo_agent.mat
+--- Control performance: PPO agent (60 episodes) ---
+Violated bus-steps : 0.320% (uncontrolled 16.635%)
+Violation reduction: 98.1% (target >= 90%) [PASS]
+of which overvoltage: 100%
+Mean loss : 51.6 kW (uncontrolled 80.1 kW, -35.6%)
+Switching per step : 0.438
+Interp. penalty : 0.413
+Mean reward : -0.321
+heavyLoad n= 23 violations 0.000% (unc 29.183%) loss 68.2 kW
+highPV n= 11 violations 1.745% (unc 15.714%) loss 55.2 kW
+lightLoad n= 3 violations 0.000% (unc 0.715%) loss 26.0 kW
+nominal n= 16 violations 0.000% (unc 7.907%) loss 36.6 kW
+reversePower n= 7 violations 0.000% (unc 3.626%) loss 37.1 kW
+--- Control performance: rule baseline (60 episodes) ---
+Violated bus-steps : 0.013% (uncontrolled 16.635%)
+Violation reduction: 99.9% (target >= 90%) [PASS]
+of which overvoltage: 100%
+Mean loss : 60.5 kW (uncontrolled 80.1 kW, -24.5%)
+Switching per step : 0.233
+Interp. penalty : 0.489
+Mean reward : -0.348
+heavyLoad n= 23 violations 0.033% (unc 29.183%) loss 82.6 kW
+highPV n= 11 violations 0.000% (unc 15.714%) loss 62.3 kW
+lightLoad n= 3 violations 0.000% (unc 0.715%) loss 26.1 kW
+nominal n= 16 violations 0.000% (unc 7.907%) loss 42.0 kW
+reversePower n= 7 violations 0.000% (unc 3.626%) loss 42.4 kW
+metric PPO agent rule baseline delta
+--------------------------------------------------------------------
+violated bus-steps (%%) 0.320 0.013 2433.3%
+mean loss (kW) 51.632 60.517 -14.7%
+switching per step 0.438 0.233 88.1%
+interpretability penalty 0.413 0.489 -15.5%
+--------------------------------------------------------------------
+Loss and switching are the reportable claims. Violation reduction
+is saturated by conventional control on this feeder.
+NEXT: start Ollama, then run runFullStudy('explain')
+Phase "train" finished in 13.8 min.
+========================================================================
+FULL STUDY -- phase: EXPLAIN
+========================================================================
+========================================================================
+XRL-LLM: Explainable Volt/VAR Control on the IEEE 33-bus feeder
+========================================================================
+Loaded a trained agent from results\trained_ppo_agent.mat
+========================================================================
+Closed-loop control performance
+========================================================================
+--- Control performance: rule baseline (60 episodes) ---
+Violated bus-steps : 0.013% (uncontrolled 16.635%)
+Violation reduction: 99.9% (target >= 90%) [PASS]
+of which overvoltage: 100%
+Mean loss : 60.5 kW (uncontrolled 80.1 kW, -24.5%)
+Switching per step : 0.233
+Interp. penalty : 0.489
+Mean reward : -0.348
+heavyLoad n= 23 violations 0.033% (unc 29.183%) loss 82.6 kW
+highPV n= 11 violations 0.000% (unc 15.714%) loss 62.3 kW
+lightLoad n= 3 violations 0.000% (unc 0.715%) loss 26.1 kW
+nominal n= 16 violations 0.000% (unc 7.907%) loss 42.0 kW
+reversePower n= 7 violations 0.000% (unc 3.626%) loss 42.4 kW
+--- Control performance: PPO agent (60 episodes) ---
+Violated bus-steps : 0.320% (uncontrolled 16.635%)
+Violation reduction: 98.1% (target >= 90%) [PASS]
+of which overvoltage: 100%
+Mean loss : 51.6 kW (uncontrolled 80.1 kW, -35.6%)
+Switching per step : 0.438
+Interp. penalty : 0.413
+Mean reward : -0.321
+heavyLoad n= 23 violations 0.000% (unc 29.183%) loss 68.2 kW
+highPV n= 11 violations 1.745% (unc 15.714%) loss 55.2 kW
+lightLoad n= 3 violations 0.000% (unc 0.715%) loss 26.0 kW
+nominal n= 16 violations 0.000% (unc 7.907%) loss 36.6 kW
+reversePower n= 7 violations 0.000% (unc 3.626%) loss 37.1 kW
+metric PPO agent rule baseline
+----------------------------------------------------------
+violated bus-steps 0.3199% 0.0126%
+mean loss (kW) 51.6 60.5
+switching per step 0.438 0.233
+interpretability penalty 0.413 0.489
+----------------------------------------------------------
+PPO relative to rule (negative = less):
+loss -14.7% (14.7% LOWER -- better)
+switching +88.1% (88.1% HIGHER -- worse)
+Report THIS comparison. Violation reduction against the
+uncontrolled feeder is saturated by conventional control here.
+========================================================================
+SHAP attribution
+========================================================================
+SHAP grouping: fine (12 players)
+SHAP: 10/84 explained (5.8 s elapsed)
+SHAP: 20/84 explained (11.5 s elapsed)
+SHAP: 30/84 explained (16.6 s elapsed)
+SHAP: 40/84 explained (21.3 s elapsed)
+SHAP: 50/84 explained (26.0 s elapsed)
+SHAP: 60/84 explained (30.7 s elapsed)
+SHAP: 70/84 explained (35.5 s elapsed)
+SHAP: 80/84 explained (40.7 s elapsed)
+84 decisions explained in 42.8 s (0.51 s each, method: exact-grouped-interventional)
+Mean top-1 attribution share: 0.272 (higher = more concentrated)
+========================================================================
+Natural-language explanations
+========================================================================
+Backend: ollama (llama3:8b)
+Mean latency for all three levels: 32.707 s (target < 2.0 s) [OVER TARGET]
+--- Example explanation (decision 1) ---
+ACTION : Closed capacitor bank at bus 7 (+300 kvar); closed capacitor bank at bus 32 (+300 kvar); set PV inverter at bus 32 to +0.149
+Mvar (injecting; was +0.000 Mvar).
+SUMMARY : Closed capacitor banks at buses 7 and 32, and adjusted PV inverter at bus
+32 due to low voltage at the feeder end.
+STANDARD : The automatic Volt/VAR controller took this action because the feeder end
+voltage had fallen below the statutory band. The decisive factors were
+lateral C voltages (24% of attribution) and mid-feeder voltages (17%),
+indicating a need to boost voltage at the far end of the feeder. The
+expected effect is an increase in voltage at bus 18 by +0.0039 p.u.
+Saved 84 records to results\xrl_records.mat and results\xrl_records.json
+========================================================================
+Counterfactual causal faithfulness
+========================================================================
+Faithfulness on fine grouping (12 players)
+counterfactual: 25/84
+counterfactual: 50/84
+counterfactual: 75/84
+--- Causal faithfulness ---
+Rank correlation : 0.306 +/- 0.467 (all 12 groups)
+REPORT THIS : 0.306 +/- 0.467 (12.0 informative groups) (target >= 0.80) [BELOW TARGET]
+Groups the policy provably ignores agree trivially at zero and
+inflate the all-groups figure; the informative subset is the honest one.
+Top-1 hit rate : 0.357
+Sign agreement : 0.818
+heavyLoad n= 17 faithfulness 0.342 top-1 0.412
+highPV n= 34 faithfulness 0.446 top-1 0.441
+nominal n= 24 faithfulness 0.091 top-1 0.250
+reversePower n= 9 faithfulness 0.285 top-1 0.222
+========================================================================
+Explanation quality
+========================================================================
+G-Eval: 20/84 scored
+G-Eval: 40/84 scored
+G-Eval: 60/84 scored
+G-Eval: 80/84 scored
+--- Explanation quality (G-Eval, judge = mistral-nemo) ---
+Accuracy : 4.17 / 5
+Actionability : 4.74 / 5
+Completeness : 3.39 / 5
+Overall : 4.10 +/- 0.54 (target >= 4.0) [PASS]
+========================================================================
+Ablation studies
+========================================================================
+[1/5] Full: domain context + SHAP + LLM
+quality 4.32/5 latency 16.551 s
+[2/5] Ablation 1: no attribution in prompt
+quality 4.76/5 latency 13.674 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 4.00/5 latency 10.848 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.92/5 latency 0.001 s
+[5/5] Ablation 4: template generation, same context
+quality 4.69/5 latency 0.002 s
+--- Ablation summary (paired, n = 25) ---
+condition quality gain gain % Cohen d p
+full 4.32 - - - -
+noSHAP 4.76 -0.44 -9.2% -0.69 0.002
+noDomain 4.00 0.32 8.0% 0.53 0.014
+shapOnly 4.92 -0.60 -12.2% -1.12 9.2e-06
+template 4.69 -0.37 -8.0% -0.76 0.00091
+
+========================================================================
+TARGETS FROM THE PROJECT BRIEF
+========================================================================
+metric achieved target status
+violation reduction 98.1% 90.0% PASS
+explanation quality 4.10 4.00 PASS
+causal faithfulness 0.306 0.800 BELOW
+inference latency (s) 32.707 2.0 OVER
+========================================================================
+Figures
+========================================================================
+Three figures created.
+========================================================================
+Done
+========================================================================
+NEXT (overnight): runFullStudy('repeats') then runFullStudy('sweep')
+Phase "explain" finished in 74.3 min.
+========================================================================
+XRL-LLM: Explainable Volt/VAR Control on the IEEE 33-bus feeder
+========================================================================
+Loaded a trained agent from results\trained_ppo_agent.mat
+========================================================================
+SHAP attribution
+========================================================================
+SHAP grouping: coarse (5 players)
+SHAP: 10/84 explained (0.2 s elapsed)
+SHAP: 20/84 explained (0.4 s elapsed)
+SHAP: 30/84 explained (0.5 s elapsed)
+SHAP: 40/84 explained (0.6 s elapsed)
+SHAP: 50/84 explained (0.8 s elapsed)
+SHAP: 60/84 explained (0.9 s elapsed)
+SHAP: 70/84 explained (1.0 s elapsed)
+SHAP: 80/84 explained (1.1 s elapsed)
+84 decisions explained in 1.2 s (0.01 s each, method: exact-grouped-interventional)
+Mean top-1 attribution share: 0.491 (higher = more concentrated)
+
+========================================================================
+Done
+========================================================================
+Faithfulness on coarse grouping (5 players)
+counterfactual: 25/84
+counterfactual: 50/84
+counterfactual: 75/84
+--- Causal faithfulness ---
+Rank correlation : 0.326 +/- 0.549 (all 5 groups)
+REPORT THIS : 0.326 +/- 0.549 (5.0 informative groups) (target >= 0.80) [BELOW TARGET]
+Groups the policy provably ignores agree trivially at zero and
+inflate the all-groups figure; the informative subset is the honest one.
+Top-1 hit rate : 0.429
+Sign agreement : 0.816
+heavyLoad n= 17 faithfulness 0.266 top-1 0.412
+highPV n= 34 faithfulness 0.412 top-1 0.441
+nominal n= 24 faithfulness 0.279 top-1 0.417
+reversePower n= 9 faithfulness 0.225 top-1 0.444
+
+========================================================================
+FULL STUDY -- phase: REPEATS
+========================================================================
+========================================================================
+XRL-LLM: Explainable Volt/VAR Control on the IEEE 33-bus feeder
+========================================================================
+Loaded a trained agent from results\trained_ppo_agent.mat
+========================================================================
+SHAP attribution
+========================================================================
+SHAP grouping: fine (12 players)
+SHAP: 10/84 explained (5.7 s elapsed)
+SHAP: 20/84 explained (11.3 s elapsed)
+SHAP: 30/84 explained (17.0 s elapsed)
+SHAP: 40/84 explained (22.8 s elapsed)
+SHAP: 50/84 explained (28.2 s elapsed)
+SHAP: 60/84 explained (33.4 s elapsed)
+SHAP: 70/84 explained (38.7 s elapsed)
+SHAP: 80/84 explained (44.9 s elapsed)
+84 decisions explained in 47.3 s (0.56 s each, method: exact-grouped-interventional)
+Mean top-1 attribution share: 0.272 (higher = more concentrated)
+
+========================================================================
+Done
+========================================================================
+5 repeats x 5 conditions x 50 records (3 conditions call the LLM).
+At ~16 s/generation (8B, partial offload) expect 6-8 hours;
+at ~2 s (3B, resident) expect under an hour.
+NOTE: generator (llama3:8b) and judge (mistral-nemo) will not both fit in VRAM,
+so Ollama reloads on every switch -- roughly 50 swaps this run.
+
+########## ablation repeat 1 of 5 ##########
+[1/5] Full: domain context + SHAP + LLM
+quality 4.32/5 latency 16.231 s
+[2/5] Ablation 1: no attribution in prompt
+quality 4.47/5 latency 12.762 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 4.08/5 latency 10.575 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.79/5 latency 0.000 s
+[5/5] Ablation 4: template generation, same context
+quality 4.61/5 latency 0.001 s
+--- Ablation summary (paired, n = 50) ---
+condition quality gain gain % Cohen d p
+full 4.32 - - - -
+noSHAP 4.47 -0.15 -3.4% -0.24 0.091
+noDomain 4.08 0.24 5.9% 0.39 0.0076
+shapOnly 4.79 -0.47 -9.7% -0.75 2.6e-06
+template 4.61 -0.29 -6.4% -0.47 0.0017
+
+########## ablation repeat 2 of 5 ##########
+[1/5] Full: domain context + SHAP + LLM
+quality 4.28/5 latency 16.283 s
+[2/5] Ablation 1: no attribution in prompt
+quality 4.68/5 latency 12.700 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 4.07/5 latency 10.287 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.83/5 latency 0.000 s
+[5/5] Ablation 4: template generation, same context
+quality 4.59/5 latency 0.001 s
+
+--- Ablation summary (paired, n = 50) ---
+condition quality gain gain % Cohen d p
+full 4.28 - - - -
+noSHAP 4.68 -0.40 -8.5% -0.57 0.00021
+noDomain 4.07 0.21 5.2% 0.35 0.018
+shapOnly 4.83 -0.55 -11.3% -0.89 7.8e-08
+template 4.59 -0.31 -6.7% -0.53 0.00044
+
+########## ablation repeat 3 of 5 ##########
+[1/5] Full: domain context + SHAP + LLM
+quality 4.26/5 latency 16.680 s
+[2/5] Ablation 1: no attribution in prompt
+quality 4.49/5 latency 13.348 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 4.07/5 latency 10.222 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.80/5 latency 0.000 s
+[5/5] Ablation 4: template generation, same context
+quality 4.62/5 latency 0.001 s
+
+--- Ablation summary (paired, n = 50) ---
+condition quality gain gain % Cohen d p
+full 4.26 - - - -
+noSHAP 4.49 -0.23 -5.2% -0.44 0.0034
+noDomain 4.07 0.19 4.6% 0.36 0.015
+shapOnly 4.80 -0.54 -11.2% -0.86 1.7e-07
+template 4.62 -0.36 -7.8% -0.78 1.3e-06
+
+########## ablation repeat 4 of 5 ##########
+[1/5] Full: domain context + SHAP + LLM
+quality 4.26/5 latency 16.282 s
+[2/5] Ablation 1: no attribution in prompt
+quality 4.61/5 latency 12.708 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 3.90/5 latency 10.092 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.81/5 latency 0.000 s
+[5/5] Ablation 4: template generation, same context
+quality 4.61/5 latency 0.001 s
+
+--- Ablation summary (paired, n = 50) ---
+condition quality gain gain % Cohen d p
+full 4.26 - - - -
+noSHAP 4.61 -0.35 -7.5% -0.53 0.00043
+noDomain 3.90 0.36 9.2% 0.71 7.4e-06
+shapOnly 4.81 -0.55 -11.5% -0.91 5e-08
+template 4.61 -0.35 -7.5% -0.65 2.8e-05
+
+########## ablation repeat 5 of 5 ##########
+[1/5] Full: domain context + SHAP + LLM
+quality 4.28/5 latency 16.581 s
+[2/5] Ablation 1: no attribution in prompt
+quality 4.54/5 latency 13.780 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 4.06/5 latency 10.260 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.81/5 latency 0.000 s
+[5/5] Ablation 4: template generation, same context
+quality 4.61/5 latency 0.001 s
+
+--- Ablation summary (paired, n = 50) ---
+condition quality gain gain % Cohen d p
+full 4.28 - - - -
+noSHAP 4.54 -0.26 -5.7% -0.46 0.0021
+noDomain 4.06 0.22 5.4% 0.41 0.0053
+shapOnly 4.81 -0.53 -11.1% -1.08 7.3e-10
+template 4.61 -0.33 -7.2% -0.59 0.00012
+
+================ ACROSS-RUN SUMMARY (5 repeats) ================
+condition mean gain SD sign stable p<.05 verdict
+noSHAP -6.1% 2.0 100% 80% REPORTABLE
+noDomain 6.1% 1.8 100% 100% REPORTABLE
+shapOnly -11.0% 0.7 100% 100% REPORTABLE
+template -7.1% 0.6 100% 100% REPORTABLE
+Full-condition quality across repeats: 4.28 +/- 0.02
+Compare that SD against the gaps above. Any effect smaller than
+the run-to-run SD is not measurable at this sample size.
+================================================================
+Phase "repeats" finished in 225.6 min.
+========================================================================
+
+FULL STUDY -- phase: MODELSIZE
+========================================================================
+========================================================================
+XRL-LLM: Explainable Volt/VAR Control on the IEEE 33-bus feeder
+========================================================================
+Loaded a trained agent from results\trained_ppo_agent.mat
+========================================================================
+SHAP attribution
+========================================================================
+SHAP grouping: fine (12 players)
+SHAP: 10/84 explained (7.2 s elapsed)
+SHAP: 20/84 explained (14.3 s elapsed)
+SHAP: 30/84 explained (21.3 s elapsed)
+SHAP: 40/84 explained (28.4 s elapsed)
+SHAP: 50/84 explained (36.4 s elapsed)
+SHAP: 60/84 explained (43.7 s elapsed)
+SHAP: 70/84 explained (51.3 s elapsed)
+SHAP: 80/84 explained (58.8 s elapsed)
+84 decisions explained in 61.8 s (0.74 s each, method: exact-grouped-interventional)
+Mean top-1 attribution share: 0.272 (higher = more concentrated)
+========================================================================
+Done
+========================================================================
+
+--- model: llama3:8b ---
+[1/5] Full: domain context + SHAP + LLM
+quality 4.30/5 latency 15.998 s
+[2/5] Ablation 1: no attribution in prompt
+quality 4.52/5 latency 13.759 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 4.01/5 latency 10.779 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.69/5 latency 0.001 s
+[5/5] Ablation 4: template generation, same context
+quality 4.57/5 latency 0.002 s
+
+--- Ablation summary (paired, n = 50) ---
+condition quality gain gain % Cohen d p
+full 4.30 - - - -
+noSHAP 4.52 -0.22 -4.9% -0.35 0.017
+noDomain 4.01 0.29 7.1% 0.50 0.00087
+shapOnly 4.69 -0.39 -8.3% -0.67 2.1e-05
+template 4.57 -0.27 -6.0% -0.49 0.0011
+
+--- model: llama3.2:3b ---
+[1/5] Full: domain context + SHAP + LLM
+quality 3.84/5 latency 3.254 s
+[2/5] Ablation 1: no attribution in prompt
+quality 3.82/5 latency 3.124 s
+[3/5] Ablation 2: generic prompt, no grid knowledge
+quality 3.72/5 latency 2.775 s
+[4/5] Ablation 3: raw SHAP numbers, no generation
+quality 4.00/5 latency 0.000 s
+[5/5] Ablation 4: template generation, same context
+quality 3.92/5 latency 0.001 s
+
+--- Ablation summary (paired, n = 50) ---
+condition quality gain gain % Cohen d p
+full 3.84 - - - -
+noSHAP 3.82 0.02 0.5% 0.04 0.79
+noDomain 3.72 0.12 3.2% 0.21 0.14
+shapOnly 4.00 -0.16 -4.0% -0.45 0.0027
+template 3.92 -0.08 -2.0% -0.17 0.23
+
+--- Model size comparison (full condition) ---
+llama3:8b quality 4.30 latency 16.00 s/explanation
+llama3.2:3b quality 3.84 latency 3.25 s/explanation
+speedup 4.9x for 0.46 quality points
+prompt sensitivity (quality spread across conditions):
+llama3:8b 0.67
+llama3.2:3b 0.28
+-> the smaller model is largely INSENSITIVE to prompt
+content. Its explanations are cheaper but they are not
+responding to the attribution or the grid context.
+If quality is comparable, the DOMAIN PROMPT is doing the
+work rather than model scale -- report that explicitly.
+Phase "modelsize" finished in 60.2 min.
+
+========================================================================
+FULL STUDY -- phase: SWEEP
+========================================================================
+Trains one agent per grid point. Expect 2-6 hours.
+=== Sweep point alpha=10 delta=0 (1/5) ===
+viol 0.000% loss 53.1 kW switching 0.266 topShare 0.325
+=== Sweep point alpha=10 delta=0.02 (2/5) ===
+viol 0.101% loss 52.6 kW switching 0.270 topShare 0.347
+=== Sweep point alpha=10 delta=0.05 (3/5) ===
+viol 0.020% loss 54.3 kW switching 0.248 topShare 0.404
+=== Sweep point alpha=10 delta=0.1 (4/5) ===
+viol 0.051% loss 56.4 kW switching 0.246 topShare 0.327
+=== Sweep point alpha=10 delta=0.2 (5/5) ===
+viol 0.066% loss 56.6 kW switching 0.285 topShare 0.356
+
+--- Sweep summary (rows = w.voltage, cols = w.interp) ---
+Violation rate (%%)
+0 0.02 0.05 0.1 0.2 <- delta
+10 0.000 0.101 0.020 0.051 0.066
+Mean loss (kW)
+0 0.02 0.05 0.1 0.2 <- delta
+10 53.079 52.642 54.320 56.434 56.632
+Switching per step
+0 0.02 0.05 0.1 0.2 <- delta
+10 0.266 0.270 0.248 0.246 0.285
+
+Top-1 SHAP share
+0 0.02 0.05 0.1 0.2 <- delta
+10 0.325 0.347 0.404 0.327 0.356
+Plot sweep.lossKW against sweep.topShare with delta as the
+parameter. A knee supports the penalty; a straight line means
+it only trades one objective for another. Report either.
+Phase "sweep" finished in 8.9 min.
+>>
+
+Top candidates :
+idx hour scenario pvMW loadMW vMaxPre vMaxPost vMinPre
+vMinPost action reverseFlow
+___ ____ ______________ ______ ______ _______ ________ _______ ________
+_________________________________________________________________________________________________________________ ___________
+3 10 "reversePower" 2.7597 2.2792 1.0462 1.0264 1.0097 0.99704 "lowered the tap 1 step(s), closed 1
+capacitor bank(s), opened 1 capacitor bank(s) and adjusted 2 PV inverter(s)" true
+4 11 "reversePower" 2.9376 2.0442 1.0357 1.0167 0.9973 0.9846 "lowered the tap 1 step(s), opened 1
+capacitor bank(s) and adjusted 2 PV inverter(s)" true
+5 12 "reversePower" 3.2878 1.8883 1.0352 1.0294 0.98531 0.97293 "lowered the tap 1 step(s), closed 1
+capacitor bank(s) and adjusted 2 PV inverter(s)" true
+40 10 "highPV" 2.4533 3.0005 1.0579 1.0514 1.0324 1.0296 "adjusted 2 PV
+inverter(s)" false
+57 10 "highPV" 2.2951 2.2984 1.0462 1.0423 1.0217 1.0204 "adjusted 2 PV
+inverter(s)" false
+66 10 "highPV" 2.2848 2.6227 1.0448 1.0384 1.0209 1.0182 "adjusted 2 PV
+inverter(s)" false
+Using record 4: hour 11, reversePower day, PV 2.94 MW, load 2.04 MW
+>>

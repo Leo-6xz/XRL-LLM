@@ -1,0 +1,179 @@
+>> setupPaths; runAllTests; checkTransfer69
+
+=== powerFlow ===
+  [pass] 33 buses
+  [pass] 32 branches
+  [pass] radial (tree)
+  [pass] slack has no parent
+  [pass] all buses reachable
+  [pass] total load 3715 kW
+  [pass] total load 2300 kvar
+  [pass] converged
+  [pass] converged in < 20 iterations
+  [pass] min voltage 0.9131 p.u. (0.91309)
+  [pass] min voltage at bus 18
+  [pass] losses 202.67 kW (202.677)
+  [pass] reactive losses 135.14 kvar (135.141)
+  [pass] slack voltage held
+  [pass] voltage falls downstream
+  [pass] no-load: flat profile (0)
+  [pass] no-load: zero losses (0)
+  [pass] VAr injection raises local voltage
+  [pass] higher slack raises all voltages
+  [pass] heavier load increases losses
+  [pass] heavier load lowers min voltage
+  --> 21/21 passed
+
+=== environment ===
+  [pass] observation is 80 x 1
+  [pass] observation finite
+  [pass] nAction == 9
+  [pass] voltages in obs(1:33)
+  [pass] neutral action -> tap 0
+  [pass] neutral -> nominal slack
+  [pass] action +1 -> max tap
+  [pass] action +1 -> all caps on
+  [pass] action -1 -> min tap
+  [pass] action -1 -> all caps off
+  [pass] action clipped to [-1,1]
+  [pass] Q headroom shrinks at high PV
+  [pass] Q headroom non-negative
+  [pass] closing a bank raises local voltage
+  [pass] raising the tap raises voltages
+  [pass] episode length matches config
+  [pass] rewards finite
+  [pass] rewards non-positive
+  [pass] observation stays finite
+  [pass] history logged
+  [pass] info has VmPre/VmPost
+  [pass] same seed -> same rollout (0)
+  [pass] different seed -> different rollout
+  --> 23/23 passed
+
+=== reward ===
+  [pass] violation lowers reward
+  [pass] higher loss lowers reward
+  [pass] non-convergence returns -100 (-100)
+  [pass] deep violation costs more than 3 shallow
+  [pass] moving many devices costs more than one
+  [pass] no movement -> zero penalty (0)
+  [pass] VAr injection into high voltage costs more
+  [pass] distant co-movement costs more than adjacent
+  [pass] both report 2 devices moved
+  [pass] zero weight removes the term from the reward (0)
+  [pass] zero weight still reports nMoved (diagnostic intact)
+  [pass] zero weight still reports a raw penalty value
+  [pass] reward equals its decomposition (default form) (-3.675)
+  [pass] normalised form self-consistent (-3.675)
+  [pass] raw-weight form self-consistent (-0.541)
+  [pass] the two forms differ (normalisation is not a no-op)
+  [pass] raw form matches the legacy formula (-0.541)
+  --> 17/17 passed
+
+=== shap ===
+  [pass] exact: linear model closed form (2.77556e-16)
+  [pass] exact: efficiency axiom (2.22045e-16)
+  [pass] exact: dummy feature gets zero (0)
+  [pass] exact: symmetry axiom (0)
+  [pass] kernelSHAP enumerated for small M
+  [pass] kernelSHAP == exact (enumerated) (3.34702e-08)
+  [pass] kernelSHAP: efficiency axiom (0)
+  [pass] kernelSHAP sampled: efficiency exact (0)
+  [pass] kernelSHAP sampled: correlates with exact
+  [pass] policy SHAP: efficiency axiom (7.32747e-15)
+  [pass] bus-30 bank attributed to Lateral C (got "Lateral C voltages (bus 26-33)")
+  [pass] OLTC attribution is not degenerate
+  [pass] findTopFeatures returns 3
+  [pass] findTopFeatures sorted
+  [pass] shares sum <= 1 (1)
+  [pass] grouping covers all but V1
+  PPO agent: actor LR 1.0e-04, critic LR 1.0e-03, entropy 0.020, clip 0.20
+  [pass] agent policy: single obs -> [1 x nAction]
+  [pass] agent policy: batch of 7 -> [7 x nAction]
+  [pass] agent policy: batch output finite
+  [pass] agent policy: batch row matches single call (3.67872e-08)
+  [pass] agent policy: deterministic (policy mean) (0)
+  --> 21/21 passed
+
+=== llm ===
+  [pass] collectAttributions produced records
+  [pass] prompt is non-empty
+  [pass] prompt names the network
+  [pass] prompt states the ANSI band
+  [pass] prompt lists device buses
+  [pass] prompt carries attribution
+  [pass] prompt carries sensitivity
+  [pass] prompt forbids invention
+  [pass] noshap variant drops attribution
+  [pass] nodomain variant drops topology
+  [pass] nodomain is shorter than full
+  [pass] template summary non-empty
+  [pass] template summary has no format holes
+  [pass] template standard non-empty
+  [pass] template standard has no format holes
+  [pass] template detailed non-empty
+  [pass] template detailed has no format holes
+  [pass] detailed is longer than summary
+  [pass] template backend selected
+  [pass] template backend not "available"
+  [pass] offline explanation generated
+  [pass] meta reports the backend
+  [pass] meta retains the prompt
+  [pass] latency under target
+  [pass] three levels produced
+  [pass] consistency flag present
+  [pass] shaponly bypasses generation
+  [pass] shaponly contains SHAP
+  [pass] gEval marked as proxy offline
+  [pass] gEval scores in [1,5]
+  [pass] live LLM (ollama) responded
+  [pass] live reply has no chatbot preamble
+  [pass] live latency within batch budget (180 s)
+  [info] live latency 7.33 s | interactive target 2.0 s (MISSES)
+         Run llmLatencyProfile to see where the time goes.
+  --> 33/33 passed
+
+========================================
+  TOTAL: 115 passed, 0 failed
+  All suites passed.
+========================================
+
+
+=== Transfer sanity checks ===
+  [PASS] 33-bus: SHAP group indices unchanged
+  [PASS] 33-bus: observation is 80-D
+  [PASS] 33-bus: obs(1:33) are bus voltages
+  [PASS] 33-bus: base loss 202.68 kW (expect 202.67)
+  [PASS] 69-bus: base loss 224.99 kW (expect 224.99)
+  [PASS] 69-bus: V_min 0.9092 p.u. at bus 65 (expect 0.9092 at 65)
+  [PASS] 69-bus: 12 fine SHAP players (expect 12)
+  [PASS] 69-bus: 5 coarse SHAP players (expect 5)
+  [PASS] 69-bus: every feature except V1 in exactly one group
+  [PASS] 69-bus: observation is 152-D (expect 152)
+  [PASS] 69-bus: obs(1:69) are bus voltages
+  [PASS] 69-bus: PV channels match state.pvP
+  [PASS] 69-bus: normalisation is 152-D and finite
+  Rule baseline, 5 episodes on the 69-bus feeder:
+
+--- Control performance: rule (69-bus) (5 episodes) ---
+  Violated bus-steps : 0.676%  (uncontrolled 5.072%)
+  Violation reduction: 86.7%  (target >= 90%) [BELOW TARGET]
+    of which overvoltage: 100%
+  Mean loss          : 89.7 kW  (uncontrolled 92.7 kW, -3.2%)
+  Switching per step : 0.166
+  Interp. penalty    : 0.529
+  Mean reward        : -0.430
+    heavyLoad      n=  1  violations 3.382% (unc 12.319%)  loss 140.6 kW
+    highPV         n=  1  violations 0.000% (unc 6.582%)  loss 118.4 kW
+    nominal        n=  3  violations 0.000% (unc 2.154%)  loss 63.2 kW
+  [PASS] 69-bus: closed-loop rollout finite
+
+ALL CHECKS PASSED. Next: runTransfer69   (Ollama stopped; ~15-25 min)
+
+ans =
+
+  logical
+
+   1
+
+>> 

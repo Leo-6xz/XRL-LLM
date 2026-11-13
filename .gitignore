@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------
+# Figures: NOT archived (IEEE copyright on the published versions).
+# All figures can be regenerated from the code and results/ records.
+# ---------------------------------------------------------------
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+*.gif
+*.eps
+*.svg
+*.emf
+*.fig
+*.pdf
+
+# Manuscript, supplementary material, drawings
+*.docx
+*.doc
+*.pptx
+*.tex
+*.bib
+*.drawio
+manuscript/
+supplementary/
+
+# MATLAB autosave / temp
+*.asv
+*.m~
+*.autosave
+slprj/
+*.mexw64
+
+# Training checkpoints (large; the final agents are kept)
+results/**/checkpoints/
+results/**/savedAgents/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

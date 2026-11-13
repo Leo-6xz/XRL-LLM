@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "XRL-LLM: Explainable Reinforcement Learning with Natural-Language Justifications for Volt/VAR Control"
+abstract: >-
+  MATLAB implementation of XRL-LLM, which couples an interpretability-aware
+  PPO agent for Volt/VAR control with exact grouped Shapley attribution and
+  domain-grounded large language model explanations. Includes the IEEE 33-bus
+  study, robustness tests, transfer to the IEEE 69-bus feeder, trained agents
+  and numerical result records.
+version: v1.0
+date-released: 2026-11-13
+license: MIT
+repository-code: "https://github.com/Leo-6xz/XRL-LLM"
+authors:
+  - family-names: Ogar
+    given-names: Emmanuel Ede
+    affiliation: Chulalongkorn University
+  - family-names: Ogar
+    given-names: Deborah Oyetolani
+  - family-names: Agabi
+    given-names: Emmanuel
+  - family-names: Chaitusaney
+    given-names: Surachai
+    affiliation: Chulalongkorn University
+keywords:
+  - explainable AI
+  - reinforcement learning
+  - Volt/VAR control
+  - Shapley values
+  - large language models
+  - distribution networks

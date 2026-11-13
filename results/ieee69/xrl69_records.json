@@ -1,0 +1,3500 @@
+[
+  {
+    "timestamp": "2026-11-12T13:54:53",
+    "episode": 1,
+    "step": 1,
+    "hour": 0,
+    "scenario": "nominal",
+    "action": [
+      -0.032700095325708389,
+      -0.49352499842643738,
+      -0.99213880300521851,
+      0.97937256097793579,
+      0.99952143430709839,
+      0.99999517202377319,
+      -0.0060461051762104034,
+      -0.040547911077737808,
+      -0.058674663305282593
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.054 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.078 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0011704069229305188,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0078230139849812443,
+      "MainFeeder_endVoltages_bus19_27_": 0.018669225370463054,
+      "Head_endLateralVoltages_bus28_50_": -0.0084162624789876454,
+      "LongLateralVoltages_bus53_60_": 0.016953917152166376,
+      "LongLateralEndVoltages_bus61_65_": 0.017597277525645771,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0037043733740007795,
+      "LateralLoad_bus28_50_53_65_": 0.0021503534216553402,
+      "PVActiveOutput": 0.0081490239372388334,
+      "AggregateLoadLevel": 0.0008295883314380333,
+      "TimeOfDay": -0.0034933519963589047,
+      "PreviousControlAction": -0.032710308618279171
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.032710308618279171,
+        "share": 0.26885088722455242
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.018669225370463054,
+        "share": 0.153445137531942
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.017597277525645771,
+        "share": 0.14463463890593625
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.016953917152166376,
+        "share": 0.13934676439415628
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0084162624789876454,
+        "share": 0.069174511955722939
+      }
+    ],
+    "reward": -0.47100797904357361,
+    "Vmin": 0.96652542220806736,
+    "Vmax": 1,
+    "lossKW": 34.627605211498256,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:54",
+    "episode": 1,
+    "step": 3,
+    "hour": 2,
+    "scenario": "nominal",
+    "action": [
+      0.0806664451956749,
+      0.036133423447608948,
+      -0.9960174560546875,
+      0.991549551486969,
+      0.99960583448410034,
+      0.99999541044235229,
+      -0.056392461061477661,
+      0.002559018786996603,
+      -0.03558727353811264
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to +0.003 Mvar (injecting; was -0.074 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.016720104712233945,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.047367909248701108,
+      "MainFeeder_endVoltages_bus19_27_": -0.0699413142267899,
+      "Head_endLateralVoltages_bus28_50_": -0.0701934215118862,
+      "LongLateralVoltages_bus53_60_": 0.0041573097727248464,
+      "LongLateralEndVoltages_bus61_65_": -0.001497273174360879,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.061853067886758456,
+      "LateralLoad_bus28_50_53_65_": -0.030708676852573873,
+      "PVActiveOutput": -0.00761739622200373,
+      "AggregateLoadLevel": 0.0024809126913061261,
+      "TimeOfDay": -0.10194197589687207,
+      "PreviousControlAction": -0.084045245637770161
+    },
+    "top_features": [
+      {
+        "name": "Time of day",
+        "value": -0.10194197589687207,
+        "share": 0.20448734986181621
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.084045245637770161,
+        "share": 0.1685879579805194
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0701934215118862,
+        "share": 0.14080232030444126
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.0699413142267899,
+        "share": 0.140296613502541
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.061853067886758456,
+        "share": 0.12407224621368493
+      }
+    ],
+    "reward": -0.23222776421648722,
+    "Vmin": 0.96763382325131109,
+    "Vmax": 1,
+    "lossKW": 33.737945877976436,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:54",
+    "episode": 1,
+    "step": 18,
+    "hour": 17,
+    "scenario": "nominal",
+    "action": [
+      0.11417202651500702,
+      0.57062911987304688,
+      -0.98890119791030884,
+      0.9956362247467041,
+      0.9953346848487854,
+      0.99993437528610229,
+      -0.038037810474634171,
+      0.11747294664382935,
+      0.19021981954574585
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 27 to -0.051 Mvar (absorbing; was -0.135 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.017441892089965196,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.016904637198309411,
+      "MainFeeder_endVoltages_bus19_27_": 0.016008199473193253,
+      "Head_endLateralVoltages_bus28_50_": -0.035607973871264451,
+      "LongLateralVoltages_bus53_60_": -0.0013945972298458336,
+      "LongLateralEndVoltages_bus61_65_": 0.0024404543806255427,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.013307341906057866,
+      "LateralLoad_bus28_50_53_65_": 0.0090385469036016533,
+      "PVActiveOutput": 0.0020712343518977171,
+      "AggregateLoadLevel": -0.001976408980198715,
+      "TimeOfDay": 0.0080212628280636484,
+      "PreviousControlAction": 0.012448476683396303
+    },
+    "top_features": [
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.035607973871264451,
+        "share": 0.26055690448462643
+      },
+      {
+        "name": "Head-end voltages (bus 2-9, 51-52)",
+        "value": -0.017441892089965196,
+        "share": 0.12762886840308846
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.016904637198309411,
+        "share": 0.12369757278949492
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.016008199473193253,
+        "share": 0.11713800162254348
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.013307341906057866,
+        "share": 0.097374813475672214
+      }
+    ],
+    "reward": -0.32867030087018156,
+    "Vmin": 0.96726990151770487,
+    "Vmax": 1.0160753111727683,
+    "lossKW": 64.546498317386352,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:55",
+    "episode": 2,
+    "step": 1,
+    "hour": 0,
+    "scenario": "highPV",
+    "action": [
+      -0.027144907042384148,
+      -0.47530263662338257,
+      -0.99252891540527344,
+      0.97964578866958618,
+      0.99956357479095459,
+      0.99999582767486572,
+      -0.0063106054440140724,
+      -0.046184495091438293,
+      -0.052828326821327209
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.062 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.070 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0011477946673357313,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0076373203103208978,
+      "MainFeeder_endVoltages_bus19_27_": 0.018550729049046519,
+      "Head_endLateralVoltages_bus28_50_": -0.0083714905494628022,
+      "LongLateralVoltages_bus53_60_": 0.016483290367077762,
+      "LongLateralEndVoltages_bus61_65_": 0.017026844851704262,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0057400407506963463,
+      "LateralLoad_bus28_50_53_65_": 0.0015934349793482539,
+      "PVActiveOutput": 0.00811913633595785,
+      "AggregateLoadLevel": 0.00083322028258565558,
+      "TimeOfDay": -0.0035435015473596837,
+      "PreviousControlAction": -0.032522954719566531
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.032522954719566531,
+        "share": 0.26752504195786575
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.018550729049046519,
+        "share": 0.15259328711020981
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.017026844851704262,
+        "share": 0.14005822726253711
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.016483290367077762,
+        "share": 0.13558709487127851
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0083714905494628022,
+        "share": 0.068861620348028521
+      }
+    ],
+    "reward": -0.46758399643556997,
+    "Vmin": 0.96718229362321162,
+    "Vmax": 1,
+    "lossKW": 33.611823704457173,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:56",
+    "episode": 2,
+    "step": 3,
+    "hour": 2,
+    "scenario": "highPV",
+    "action": [
+      0.0837024450302124,
+      0.063359074294567108,
+      -0.99612331390380859,
+      0.99171727895736694,
+      0.9995991587638855,
+      0.99999517202377319,
+      -0.048673547804355621,
+      0.0046681631356477737,
+      -0.029756544157862663
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to +0.006 Mvar (injecting; was -0.064 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.016520974321864269,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.0459768663966827,
+      "MainFeeder_endVoltages_bus19_27_": -0.068670813435809275,
+      "Head_endLateralVoltages_bus28_50_": -0.068963404492679625,
+      "LongLateralVoltages_bus53_60_": 0.0034530864712553422,
+      "LongLateralEndVoltages_bus61_65_": -0.001439336489820768,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.052762390362704636,
+      "LateralLoad_bus28_50_53_65_": -0.02189527516896584,
+      "PVActiveOutput": -0.0078428861425290652,
+      "AggregateLoadLevel": 0.002646770495084003,
+      "TimeOfDay": -0.10101058613320052,
+      "PreviousControlAction": -0.078879750752654729
+    },
+    "top_features": [
+      {
+        "name": "Time of day",
+        "value": -0.10101058613320052,
+        "share": 0.21488772950460566
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.078879750752654729,
+        "share": 0.16780707044680637
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.068963404492679625,
+        "share": 0.14671125054949816
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.068670813435809275,
+        "share": 0.14608879868290556
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.052762390362704636,
+        "share": 0.11224556457207484
+      }
+    ],
+    "reward": -0.23005136141765462,
+    "Vmin": 0.96792963086988248,
+    "Vmax": 1,
+    "lossKW": 33.132025075401295,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:56",
+    "episode": 2,
+    "step": 12,
+    "hour": 11,
+    "scenario": "highPV",
+    "action": [
+      0.023716283962130547,
+      0.90409272909164429,
+      0.29167270660400391,
+      0.73043316602706909,
+      0.96466374397277832,
+      0.999476432800293,
+      -0.13241700828075409,
+      0.604896605014801,
+      -0.051971867680549622
+    ],
+    "actionText": "Closed capacitor bank at bus 21 (+300 kvar); set PV inverter at bus 27 to -0.132 Mvar (absorbing; was -0.015 Mvar); set PV inverter at bus 35 to +0.590 Mvar (injecting; was +0.650 Mvar); set PV inverter at bus 61 to -0.054 Mvar (absorbing; was -0.108 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0027364542672426752,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.13452033596984558,
+      "MainFeeder_endVoltages_bus19_27_": 0.31961079786665936,
+      "Head_endLateralVoltages_bus28_50_": 0.031253788643691466,
+      "LongLateralVoltages_bus53_60_": 0.075076261280481171,
+      "LongLateralEndVoltages_bus61_65_": 0.10781458865704355,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.018449794739704692,
+      "LateralLoad_bus28_50_53_65_": -0.00044974364180101084,
+      "PVActiveOutput": 0.1623028197465653,
+      "AggregateLoadLevel": -0.0012859255272290454,
+      "TimeOfDay": 0.10872215304884705,
+      "PreviousControlAction": 0.15086930898678103
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.31961079786665936,
+        "share": 0.2871378159205038
+      },
+      {
+        "name": "PV active output",
+        "value": 0.1623028197465653,
+        "share": 0.14581258671745728
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.15086930898678103,
+        "share": 0.13554073942762421
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.13452033596984558,
+        "share": 0.12085284891841622
+      },
+      {
+        "name": "Time of day",
+        "value": 0.10872215304884705,
+        "share": 0.097675803749424139
+      }
+    ],
+    "reward": -0.52045740257113238,
+    "Vmin": 0.99908928281420284,
+    "Vmax": 1.0364274423392141,
+    "lossKW": 58.746622117332649,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:57",
+    "episode": 2,
+    "step": 13,
+    "hour": 12,
+    "scenario": "highPV",
+    "action": [
+      0.02729397639632225,
+      0.95483177900314331,
+      0.80809199810028076,
+      0.65489041805267334,
+      0.96132808923721313,
+      0.999042809009552,
+      -0.2041192501783371,
+      0.48416838049888611,
+      0.048709399998188019
+    ],
+    "actionText": "Set PV inverter at bus 35 to +0.370 Mvar (injecting; was +0.590 Mvar); set PV inverter at bus 61 to +0.034 Mvar (injecting; was -0.054 Mvar).",
+    "explainedChannel": "PV inverter Q bus 35",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.0025670943636608131,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.052496510210274419,
+      "MainFeeder_endVoltages_bus19_27_": 0.11501631495307188,
+      "Head_endLateralVoltages_bus28_50_": 0.043861271764449476,
+      "LongLateralVoltages_bus53_60_": -0.045662755468342447,
+      "LongLateralEndVoltages_bus61_65_": -0.076281772690508232,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.014091561773239435,
+      "LateralLoad_bus28_50_53_65_": -0.00040751724165915756,
+      "PVActiveOutput": 0.0655450150239027,
+      "AggregateLoadLevel": 0.0040860645521686376,
+      "TimeOfDay": 0.071773836124335411,
+      "PreviousControlAction": 0.15385667513960688
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": 0.15385667513960688,
+        "share": 0.23829866888154078
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.11501631495307188,
+        "share": 0.17814134309159693
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": -0.076281772690508232,
+        "share": 0.11814791185093607
+      },
+      {
+        "name": "Time of day",
+        "value": 0.071773836124335411,
+        "share": 0.11116586000205356
+      },
+      {
+        "name": "PV active output",
+        "value": 0.0655450150239027,
+        "share": 0.10151844122358637
+      }
+    ],
+    "reward": -0.38171776556113135,
+    "Vmin": 0.99912284787873107,
+    "Vmax": 1.049872527790902,
+    "lossKW": 85.262529881566778,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:58",
+    "episode": 2,
+    "step": 17,
+    "hour": 16,
+    "scenario": "highPV",
+    "action": [
+      0.082802154123783112,
+      0.86296373605728149,
+      -0.39719885587692261,
+      0.87186449766159058,
+      0.92115718126297,
+      0.9985429048538208,
+      -0.26424279808998108,
+      0.29605281352996826,
+      0.04195268452167511
+    ],
+    "actionText": "Opened capacitor bank at bus 21 (-300 kvar); set PV inverter at bus 35 to +0.351 Mvar (injecting; was +0.425 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.00036029899679583619,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.01073397328667711,
+      "MainFeeder_endVoltages_bus19_27_": 0.053299855130367835,
+      "Head_endLateralVoltages_bus28_50_": 0.032202469944137974,
+      "LongLateralVoltages_bus53_60_": 0.010851883348179655,
+      "LongLateralEndVoltages_bus61_65_": 0.029609276590854744,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.00058313022614058831,
+      "LateralLoad_bus28_50_53_65_": 0.012416281043689286,
+      "PVActiveOutput": 0.064464333531373527,
+      "AggregateLoadLevel": 0.00010940531322552906,
+      "TimeOfDay": 0.012049128567427739,
+      "PreviousControlAction": 0.15460958942799685
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": 0.15460958942799685,
+        "share": 0.40549120439092989
+      },
+      {
+        "name": "PV active output",
+        "value": 0.064464333531373527,
+        "share": 0.16906920418457469
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.053299855130367835,
+        "share": 0.13978836972942185
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": 0.032202469944137974,
+        "share": 0.08445671688490175
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.029609276590854744,
+        "share": 0.0776556051302452
+      }
+    ],
+    "reward": -0.43194386314929523,
+    "Vmin": 0.98418553743136084,
+    "Vmax": 1.0213413623917056,
+    "lossKW": 38.72171132152971,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:58",
+    "episode": 2,
+    "step": 19,
+    "hour": 18,
+    "scenario": "highPV",
+    "action": [
+      0.1143769770860672,
+      0.64326578378677368,
+      -0.98091459274291992,
+      0.99382954835891724,
+      0.9916452169418335,
+      0.99986392259597778,
+      -0.044032495468854904,
+      0.1686418205499649,
+      0.14832857251167297
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 27 to -0.058 Mvar (absorbing; was -0.196 Mvar); set PV inverter at bus 61 to +0.195 Mvar (injecting; was +0.078 Mvar).",
+    "explainedChannel": "PV inverter Q bus 27",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.0018540645215844947,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.031427302930578126,
+      "MainFeeder_endVoltages_bus19_27_": -0.049911168617544167,
+      "Head_endLateralVoltages_bus28_50_": 0.015115988257023778,
+      "LongLateralVoltages_bus53_60_": 0.019380285267722612,
+      "LongLateralEndVoltages_bus61_65_": 0.023280422851956761,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.02288488852000839,
+      "LateralLoad_bus28_50_53_65_": 0.065470791053269056,
+      "PVActiveOutput": -0.0030450235729755364,
+      "AggregateLoadLevel": -0.0021834986242584243,
+      "TimeOfDay": -0.022620958661401448,
+      "PreviousControlAction": -0.033499940763364044
+    },
+    "top_features": [
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.065470791053269056,
+        "share": 0.2252376060625107
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.049911168617544167,
+        "share": 0.17170820688650645
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.033499940763364044,
+        "share": 0.11524904983409817
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.031427302930578126,
+        "share": 0.10811860316954729
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.023280422851956761,
+        "share": 0.080091085305985257
+      }
+    ],
+    "reward": -0.25542377526081395,
+    "Vmin": 0.9664112078962015,
+    "Vmax": 1.0216020845548783,
+    "lossKW": 62.707176836811648,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:54:59",
+    "episode": 3,
+    "step": 1,
+    "hour": 0,
+    "scenario": "reversePower",
+    "action": [
+      -0.029411152005195618,
+      -0.47880458831787109,
+      -0.99187219142913818,
+      0.9775841236114502,
+      0.99959349632263184,
+      0.99999618530273438,
+      -0.010965860448777676,
+      -0.052075531333684921,
+      -0.056951936334371567
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.069 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.076 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0010721870464532191,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0074772424093638547,
+      "MainFeeder_endVoltages_bus19_27_": 0.018159239388976157,
+      "Head_endLateralVoltages_bus28_50_": -0.0085684500368746232,
+      "LongLateralVoltages_bus53_60_": 0.015328490913326203,
+      "LongLateralEndVoltages_bus61_65_": 0.015580474600497617,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0071746402097399723,
+      "LateralLoad_bus28_50_53_65_": 0.0022186102442010676,
+      "PVActiveOutput": 0.0083040039538181572,
+      "AggregateLoadLevel": 0.0010690793151796572,
+      "TimeOfDay": -0.0036179564903157,
+      "PreviousControlAction": -0.033554083518438714
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.033554083518438714,
+        "share": 0.2747531823927869
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.018159239388976157,
+        "share": 0.14869453398159155
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.015580474600497617,
+        "share": 0.12757865901252582
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.015328490913326203,
+        "share": 0.12551532386217462
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0085684500368746232,
+        "share": 0.070161621744524921
+      }
+    ],
+    "reward": -0.4544658602370274,
+    "Vmin": 0.969606686467825,
+    "Vmax": 1,
+    "lossKW": 29.720109965556205,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:00",
+    "episode": 3,
+    "step": 3,
+    "hour": 2,
+    "scenario": "reversePower",
+    "action": [
+      0.088222309947013855,
+      0.037104710936546326,
+      -0.99578756093978882,
+      0.99013173580169678,
+      0.99962866306304932,
+      0.99999552965164185,
+      -0.047047428786754608,
+      -0.011609489098191261,
+      -0.0536380410194397
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to -0.015 Mvar (absorbing; was -0.080 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.01545067982582392,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.041022223868412977,
+      "MainFeeder_endVoltages_bus19_27_": -0.063959036169677339,
+      "Head_endLateralVoltages_bus28_50_": -0.0691292354161165,
+      "LongLateralVoltages_bus53_60_": -0.002913878701443131,
+      "LongLateralEndVoltages_bus61_65_": -0.0014774071865127673,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.070012629631458434,
+      "LateralLoad_bus28_50_53_65_": -0.024773051266914536,
+      "PVActiveOutput": -0.0077279392019666037,
+      "AggregateLoadLevel": 0.0038870037372598248,
+      "TimeOfDay": -0.10207990065539091,
+      "PreviousControlAction": -0.089033631256639961
+    },
+    "top_features": [
+      {
+        "name": "Time of day",
+        "value": -0.10207990065539091,
+        "share": 0.20770464796900387
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.089033631256639961,
+        "share": 0.18115906186068462
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.070012629631458434,
+        "share": 0.14245653157596752
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0691292354161165,
+        "share": 0.14065906622443985
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.063959036169677339,
+        "share": 0.13013912637813729
+      }
+    ],
+    "reward": -0.31016367681283497,
+    "Vmin": 0.97155687876378971,
+    "Vmax": 1,
+    "lossKW": 27.453114000710457,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:00",
+    "episode": 3,
+    "step": 11,
+    "hour": 10,
+    "scenario": "reversePower",
+    "action": [
+      0.0049310680478811264,
+      0.86002504825592041,
+      0.15927863121032715,
+      0.68518632650375366,
+      0.96522873640060425,
+      0.9990994930267334,
+      -0.057201363146305084,
+      0.590995192527771,
+      -0.085579909384250641
+    ],
+    "actionText": "Closed capacitor bank at bus 21 (+300 kvar); set PV inverter at bus 27 to -0.057 Mvar (absorbing; was +0.016 Mvar); set PV inverter at bus 35 to +0.578 Mvar (injecting; was +0.653 Mvar); set PV inverter at bus 61 to -0.064 Mvar (absorbing; was -0.146 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0029276860466712529,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.12605632313232937,
+      "MainFeeder_endVoltages_bus19_27_": 0.29460314115764807,
+      "Head_endLateralVoltages_bus28_50_": 0.030400323032893077,
+      "LongLateralVoltages_bus53_60_": 0.080325651915937962,
+      "LongLateralEndVoltages_bus61_65_": 0.11705490418956523,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.018002051745615488,
+      "LateralLoad_bus28_50_53_65_": 0.00087866200805224951,
+      "PVActiveOutput": 0.17046346212656652,
+      "AggregateLoadLevel": -0.00098109952571851736,
+      "TimeOfDay": 0.087307677182975732,
+      "PreviousControlAction": 0.0497172805395755
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.29460314115764807,
+        "share": 0.30100913859924922
+      },
+      {
+        "name": "PV active output",
+        "value": 0.17046346212656652,
+        "share": 0.17417010455399709
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.12605632313232937,
+        "share": 0.12879735461050779
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.11705490418956523,
+        "share": 0.11960020433069292
+      },
+      {
+        "name": "Time of day",
+        "value": 0.087307677182975732,
+        "share": 0.089206138803135424
+      }
+    ],
+    "reward": -0.75107618434782808,
+    "Vmin": 0.99884377481440179,
+    "Vmax": 1.0374252363780636,
+    "lossKW": 59.342026840022072,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:01",
+    "episode": 3,
+    "step": 18,
+    "hour": 17,
+    "scenario": "reversePower",
+    "action": [
+      0.0786488875746727,
+      0.819993793964386,
+      -0.67910319566726685,
+      0.93774127960205078,
+      0.93307608366012573,
+      0.99887114763259888,
+      -0.24078725278377533,
+      0.20619545876979828,
+      0.056706208735704422
+    ],
+    "actionText": "Opened capacitor bank at bus 21 (-300 kvar); set PV inverter at bus 35 to +0.253 Mvar (injecting; was +0.329 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.0022327282729959325,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.027116691643262553,
+      "MainFeeder_endVoltages_bus19_27_": -0.029683173575807582,
+      "Head_endLateralVoltages_bus28_50_": 0.022260548634076675,
+      "LongLateralVoltages_bus53_60_": -0.017943342080328946,
+      "LongLateralEndVoltages_bus61_65_": -0.010599615624279126,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.030007753689123329,
+      "LateralLoad_bus28_50_53_65_": 0.021446508182243085,
+      "PVActiveOutput": 0.015922884268926081,
+      "AggregateLoadLevel": 0.00011559446203437975,
+      "TimeOfDay": -0.011090271206872542,
+      "PreviousControlAction": 0.10404541962472044
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": 0.10404541962472044,
+        "share": 0.35575397527627994
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.030007753689123329,
+        "share": 0.1026030526141555
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.029683173575807582,
+        "share": 0.10149324243679074
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.027116691643262553,
+        "share": 0.092717881125635879
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": 0.022260548634076675,
+        "share": 0.076113669366394451
+      }
+    ],
+    "reward": -0.48772003317128254,
+    "Vmin": 0.97322928984364743,
+    "Vmax": 1.0177218592657522,
+    "lossKW": 41.374298967613328,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:02",
+    "episode": 3,
+    "step": 20,
+    "hour": 19,
+    "scenario": "reversePower",
+    "action": [
+      0.13232186436653137,
+      0.57612121105194092,
+      -0.99377650022506714,
+      0.99782443046569824,
+      0.99770486354827881,
+      0.99997234344482422,
+      0.005091558676213026,
+      0.11642026156187057,
+      0.19183360040187836
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 27 to +0.007 Mvar (injecting; was -0.149 Mvar); set PV inverter at bus 61 to +0.256 Mvar (injecting; was +0.202 Mvar).",
+    "explainedChannel": "PV inverter Q bus 27",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.0020373424759784213,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.052174328083514285,
+      "MainFeeder_endVoltages_bus19_27_": -0.096197887288652847,
+      "Head_endLateralVoltages_bus28_50_": 0.020607116684977989,
+      "LongLateralVoltages_bus53_60_": 0.031759200132148224,
+      "LongLateralEndVoltages_bus61_65_": 0.039498861245657046,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.031646927437900728,
+      "LateralLoad_bus28_50_53_65_": 0.057103847034115369,
+      "PVActiveOutput": 0.051467866759294115,
+      "AggregateLoadLevel": -0.0018011834844466152,
+      "TimeOfDay": -0.014678266177847637,
+      "PreviousControlAction": -0.014484200239889923
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.096197887288652847,
+        "share": 0.23266719633795707
+      },
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.057103847034115369,
+        "share": 0.13811313703462572
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.052174328083514285,
+        "share": 0.12619044948027572
+      },
+      {
+        "name": "PV active output",
+        "value": 0.051467866759294115,
+        "share": 0.12448178019178818
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.039498861245657046,
+        "share": 0.095533171918766674
+      }
+    ],
+    "reward": -0.34583141774074211,
+    "Vmin": 0.95657146996496134,
+    "Vmax": 1.0133839169273653,
+    "lossKW": 92.894506016432871,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:02",
+    "episode": 4,
+    "step": 1,
+    "hour": 0,
+    "scenario": "heavyLoad",
+    "action": [
+      -0.062822058796882629,
+      -0.36276894807815552,
+      -0.9934040904045105,
+      0.98955029249191284,
+      0.99881714582443237,
+      0.99998766183853149,
+      0.034610874950885773,
+      0.064133137464523315,
+      0.011080978438258171
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to +0.086 Mvar (injecting; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0016035258103582731,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0091491610287019534,
+      "MainFeeder_endVoltages_bus19_27_": 0.020950006282250716,
+      "Head_endLateralVoltages_bus28_50_": -0.00749228606474269,
+      "LongLateralVoltages_bus53_60_": 0.024054665740227986,
+      "LongLateralEndVoltages_bus61_65_": 0.026978226274491882,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.0044981391236661823,
+      "LateralLoad_bus28_50_53_65_": -0.0032150250400784833,
+      "PVActiveOutput": 0.0072270381868807607,
+      "AggregateLoadLevel": -0.00062115653381047346,
+      "TimeOfDay": -0.0032793618681199637,
+      "PreviousControlAction": -0.028317380372487322
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.028317380372487322,
+        "share": 0.20611551451069141
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.026978226274491882,
+        "share": 0.19636812854890212
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.024054665740227986,
+        "share": 0.17508822285859957
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.020950006282250716,
+        "share": 0.15249014093350724
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.0091491610287019534,
+        "share": 0.066594579299583276
+      }
+    ],
+    "reward": -0.60623810922215071,
+    "Vmin": 0.948807976041186,
+    "Vmax": 1.0002079618439088,
+    "lossKW": 74.679760216369345,
+    "nViolated": 5
+  },
+  {
+    "timestamp": "2026-11-12T13:55:03",
+    "episode": 4,
+    "step": 2,
+    "hour": 1,
+    "scenario": "heavyLoad",
+    "action": [
+      0.1154007688164711,
+      0.18966689705848694,
+      -0.99576675891876221,
+      0.99588030576705933,
+      0.99900341033935547,
+      0.99998259544372559,
+      0.037681169807910919,
+      0.079038612544536591,
+      0.0644523873925209
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 61 to +0.086 Mvar (injecting; was +0.015 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.022009111886224734,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.071170966188675522,
+      "MainFeeder_endVoltages_bus19_27_": -0.078414561255417889,
+      "Head_endLateralVoltages_bus28_50_": -0.063548010132804755,
+      "LongLateralVoltages_bus53_60_": 0.029018261045213368,
+      "LongLateralEndVoltages_bus61_65_": 0.0031459279192691874,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.063383818592337438,
+      "LateralLoad_bus28_50_53_65_": 0.022067649142360236,
+      "PVActiveOutput": -0.0055230938701498087,
+      "AggregateLoadLevel": -0.0029463815836021671,
+      "TimeOfDay": -0.083802885258498216,
+      "PreviousControlAction": -0.1238750602288195
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.1238750602288195,
+        "share": 0.21774268446819631
+      },
+      {
+        "name": "Time of day",
+        "value": -0.083802885258498216,
+        "share": 0.14730539923580491
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.078414561255417889,
+        "share": 0.1378340162871477
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.071170966188675522,
+        "share": 0.1251015111959726
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.063548010132804755,
+        "share": 0.11170218035308649
+      }
+    ],
+    "reward": -0.335416915591351,
+    "Vmin": 0.96495023640590982,
+    "Vmax": 1.0129455542868591,
+    "lossKW": 66.9744285071444,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:04",
+    "episode": 4,
+    "step": 18,
+    "hour": 17,
+    "scenario": "heavyLoad",
+    "action": [
+      0.37530800700187683,
+      0.91690546274185181,
+      -0.97220861911773682,
+      0.99861496686935425,
+      0.98727619647979736,
+      0.99972051382064819,
+      -0.076110787689685822,
+      0.0021489774808287621,
+      0.377739816904068
+    ],
+    "actionText": "Raised OLTC tap from +1 to +2 (substation voltage 1.0125 -> 1.0250 p.u.); set PV inverter at bus 27 to -0.101 Mvar (absorbing; was -0.047 Mvar); set PV inverter at bus 35 to +0.003 Mvar (injecting; was +0.053 Mvar); set PV inverter at bus 61 to +0.502 Mvar (injecting; was +0.397 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.00027121049714641423,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.011931342810966156,
+      "MainFeeder_endVoltages_bus19_27_": 0.015666238087075589,
+      "Head_endLateralVoltages_bus28_50_": 0.037497249388410994,
+      "LongLateralVoltages_bus53_60_": 0.0058496487289646766,
+      "LongLateralEndVoltages_bus61_65_": 0.021857609525426105,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.097674293139234369,
+      "LateralLoad_bus28_50_53_65_": 0.064915145486831485,
+      "PVActiveOutput": 0.0012725604789884019,
+      "AggregateLoadLevel": -0.0021166212981977026,
+      "TimeOfDay": 0.011262002732088029,
+      "PreviousControlAction": 0.0085117915677062374
+    },
+    "top_features": [
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.097674293139234369,
+        "share": 0.350305901951177
+      },
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.064915145486831485,
+        "share": 0.23281620843306602
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": 0.037497249388410994,
+        "share": 0.13448275227311768
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.021857609525426105,
+        "share": 0.0783916563223674
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.015666238087075589,
+        "share": 0.0561864896780139
+      }
+    ],
+    "reward": -0.76474743273515877,
+    "Vmin": 0.94257668928317617,
+    "Vmax": 1.0270966766590128,
+    "lossKW": 187.55090605359788,
+    "nViolated": 5
+  },
+  {
+    "timestamp": "2026-11-12T13:55:04",
+    "episode": 4,
+    "step": 20,
+    "hour": 19,
+    "scenario": "heavyLoad",
+    "action": [
+      0.51559728384017944,
+      0.96298825740814209,
+      -0.95351320505142212,
+      0.99817579984664917,
+      0.98028320074081421,
+      0.9990960955619812,
+      -0.19359953701496124,
+      0.042262077331542969,
+      0.40541252493858337
+    ],
+    "actionText": "Raised OLTC tap from +2 to +3 (substation voltage 1.0250 -> 1.0375 p.u.); set PV inverter at bus 27 to -0.258 Mvar (absorbing; was -0.200 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.02090246175844607,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.00753415898537915,
+      "MainFeeder_endVoltages_bus19_27_": 0.012328725925561879,
+      "Head_endLateralVoltages_bus28_50_": 0.10882032596876189,
+      "LongLateralVoltages_bus53_60_": 0.0064859612150467757,
+      "LongLateralEndVoltages_bus61_65_": 0.0242082571636921,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.12296734218188309,
+      "LateralLoad_bus28_50_53_65_": 0.079321132423032611,
+      "PVActiveOutput": 0.004138521970162015,
+      "AggregateLoadLevel": -0.0024812825449657652,
+      "TimeOfDay": 0.0084788848112562123,
+      "PreviousControlAction": 0.012214727445899271
+    },
+    "top_features": [
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.12296734218188309,
+        "share": 0.3000068494472739
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": 0.10882032596876189,
+        "share": 0.26549197998786639
+      },
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.079321132423032611,
+        "share": 0.19352197592126247
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.0242082571636921,
+        "share": 0.0590615592190841
+      },
+      {
+        "name": "Head-end voltages (bus 2-9, 51-52)",
+        "value": 0.02090246175844607,
+        "share": 0.050996318100200645
+      }
+    ],
+    "reward": -1.1123038313179761,
+    "Vmin": 0.94539813755308511,
+    "Vmax": 1.0375,
+    "lossKW": 245.14515088267856,
+    "nViolated": 5
+  },
+  {
+    "timestamp": "2026-11-12T13:55:05",
+    "episode": 4,
+    "step": 23,
+    "hour": 22,
+    "scenario": "heavyLoad",
+    "action": [
+      0.48827293515205383,
+      0.94594520330429077,
+      -0.89564955234527588,
+      0.987847089767456,
+      0.89961981773376465,
+      0.99367856979370117,
+      0.055468104779720306,
+      0.21537867188453674,
+      0.2348838597536087
+    ],
+    "actionText": "Lowered OLTC tap from +3 to +2 (substation voltage 1.0375 -> 1.0250 p.u.); set PV inverter at bus 27 to +0.074 Mvar (injecting; was -0.127 Mvar); set PV inverter at bus 35 to +0.287 Mvar (injecting; was +0.205 Mvar); set PV inverter at bus 61 to +0.313 Mvar (injecting; was +0.427 Mvar).",
+    "explainedChannel": "PV inverter Q bus 27",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0038957836035868666,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.024213954946380626,
+      "MainFeeder_endVoltages_bus19_27_": 0.03223597435475925,
+      "Head_endLateralVoltages_bus28_50_": -0.068420081931108628,
+      "LongLateralVoltages_bus53_60_": -0.017349338461305729,
+      "LongLateralEndVoltages_bus61_65_": -0.0050355321645856157,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.024092110729745111,
+      "LateralLoad_bus28_50_53_65_": 0.070040292906923041,
+      "PVActiveOutput": 0.049120503096627438,
+      "AggregateLoadLevel": -0.0054445434416251094,
+      "TimeOfDay": 0.018981986270411914,
+      "PreviousControlAction": -0.010445047489777487
+    },
+    "top_features": [
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.070040292906923041,
+        "share": 0.2127105341390694
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.068420081931108628,
+        "share": 0.20778999586345917
+      },
+      {
+        "name": "PV active output",
+        "value": 0.049120503096627438,
+        "share": 0.14917768069229009
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.03223597435475925,
+        "share": 0.097899809365537632
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.024213954946380626,
+        "share": 0.073537146640842849
+      }
+    ],
+    "reward": -0.606836750418292,
+    "Vmin": 0.95705780734065427,
+    "Vmax": 1.0270919086305361,
+    "lossKW": 132.81700654822637,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:06",
+    "episode": 5,
+    "step": 1,
+    "hour": 0,
+    "scenario": "heavyLoad",
+    "action": [
+      -0.040824051946401596,
+      -0.44852051138877869,
+      -0.99341028928756714,
+      0.98513054847717285,
+      0.99929922819137573,
+      0.99999254941940308,
+      -0.013770119287073612,
+      -0.0043555032461881638,
+      -0.037927098572254181
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 61 to -0.051 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.001422333714507206,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0084717776753683183,
+      "MainFeeder_endVoltages_bus19_27_": 0.020099261971301487,
+      "Head_endLateralVoltages_bus28_50_": -0.0078481402554049472,
+      "LongLateralVoltages_bus53_60_": 0.020129241886186554,
+      "LongLateralEndVoltages_bus61_65_": 0.0216204702183383,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.00066121061487744374,
+      "LateralLoad_bus28_50_53_65_": -0.00059678429693338581,
+      "PVActiveOutput": 0.0076727693198110443,
+      "AggregateLoadLevel": 0.00011688714796908404,
+      "TimeOfDay": -0.0033326857153818173,
+      "PreviousControlAction": -0.030251272164119266
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.030251272164119266,
+        "share": 0.24750916773465639
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.0216204702183383,
+        "share": 0.17689386947898078
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.020129241886186554,
+        "share": 0.164692971566628
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.020099261971301487,
+        "share": 0.164447682583682
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.0084717776753683183,
+        "share": 0.069314197111700268
+      }
+    ],
+    "reward": -0.52251584497173442,
+    "Vmin": 0.95889603503823373,
+    "Vmax": 1,
+    "lossKW": 49.9082721035193,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:06",
+    "episode": 5,
+    "step": 2,
+    "hour": 1,
+    "scenario": "heavyLoad",
+    "action": [
+      0.07463189959526062,
+      0.0048244399949908257,
+      -0.99670183658599854,
+      0.99385839700698853,
+      0.99951440095901489,
+      0.99999302625656128,
+      -0.027063906192779541,
+      -0.0034210879821330309,
+      0.006200308445841074
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 61 to +0.008 Mvar (injecting; was -0.051 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.022400684284794484,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.064305413390096045,
+      "MainFeeder_endVoltages_bus19_27_": -0.078017231573860465,
+      "Head_endLateralVoltages_bus28_50_": -0.070637172111604252,
+      "LongLateralVoltages_bus53_60_": 0.020497668408699814,
+      "LongLateralEndVoltages_bus61_65_": -0.0015447345798541173,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.027583621281285803,
+      "LateralLoad_bus28_50_53_65_": -0.0094641984469872667,
+      "PVActiveOutput": -0.0064597747153849715,
+      "AggregateLoadLevel": -0.00062951590060490769,
+      "TimeOfDay": -0.09531619881779628,
+      "PreviousControlAction": -0.16158329583127923
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.16158329583127923,
+        "share": 0.28934789377921788
+      },
+      {
+        "name": "Time of day",
+        "value": -0.09531619881779628,
+        "share": 0.170683121847993
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.078017231573860465,
+        "share": 0.1397057877687635
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.070637172111604252,
+        "share": 0.1264902839607526
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.064305413390096045,
+        "share": 0.11515197673932048
+      }
+    ],
+    "reward": -0.43768705157256482,
+    "Vmin": 0.95817369637150074,
+    "Vmax": 1,
+    "lossKW": 51.545209092653032,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:07",
+    "episode": 5,
+    "step": 7,
+    "hour": 6,
+    "scenario": "heavyLoad",
+    "action": [
+      0.10365684330463409,
+      0.36204782128334045,
+      -0.99386483430862427,
+      0.99509882926940918,
+      0.99816739559173584,
+      0.99997740983963013,
+      0.078074105083942413,
+      0.25687390565872192,
+      0.083978451788425446
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 27 to +0.104 Mvar (injecting; was +0.025 Mvar); set PV inverter at bus 35 to +0.342 Mvar (injecting; was +0.275 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.017019228507444365,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.016345050698354371,
+      "MainFeeder_endVoltages_bus19_27_": 0.027328922996834121,
+      "Head_endLateralVoltages_bus28_50_": -0.036257516932126407,
+      "LongLateralVoltages_bus53_60_": -0.0050520727306999219,
+      "LongLateralEndVoltages_bus61_65_": 0.0011534672730536084,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.004369843606702414,
+      "LateralLoad_bus28_50_53_65_": 0.012714610776701841,
+      "PVActiveOutput": 0.005706440899890277,
+      "AggregateLoadLevel": -0.0019353687764868928,
+      "TimeOfDay": -0.010089719511303738,
+      "PreviousControlAction": 0.015070567007141288
+    },
+    "top_features": [
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.036257516932126407,
+        "share": 0.23691094667716817
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.027328922996834121,
+        "share": 0.17857044736316668
+      },
+      {
+        "name": "Head-end voltages (bus 2-9, 51-52)",
+        "value": -0.017019228507444365,
+        "share": 0.11120567205309786
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.016345050698354371,
+        "share": 0.10680051371643505
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.015070567007141288,
+        "share": 0.098472885038080465
+      }
+    ],
+    "reward": -0.28705244009747932,
+    "Vmin": 0.96137696648456428,
+    "Vmax": 1.0154595653426106,
+    "lossKW": 78.562307816739889,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:08",
+    "episode": 5,
+    "step": 13,
+    "hour": 12,
+    "scenario": "heavyLoad",
+    "action": [
+      0.16274654865264893,
+      0.93498599529266357,
+      0.20319531857967377,
+      0.74387317895889282,
+      0.89613723754882812,
+      0.99628943204879761,
+      -0.032638963311910629,
+      0.47461962699890137,
+      -0.14748172461986542
+    ],
+    "actionText": "Closed capacitor bank at bus 21 (+300 kvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.015084340526675085,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.18887234179380391,
+      "MainFeeder_endVoltages_bus19_27_": 0.31612462760571758,
+      "Head_endLateralVoltages_bus28_50_": -0.044233004852064356,
+      "LongLateralVoltages_bus53_60_": 0.097753932928908022,
+      "LongLateralEndVoltages_bus61_65_": 0.091556221274392863,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.011504713764112232,
+      "LateralLoad_bus28_50_53_65_": 0.0093356460575756937,
+      "PVActiveOutput": 0.089724230102183444,
+      "AggregateLoadLevel": -0.00016152620523360138,
+      "TimeOfDay": 0.10202476757056825,
+      "PreviousControlAction": 0.1170959869495407
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.31612462760571758,
+        "share": 0.29177017983091852
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.18887234179380391,
+        "share": 0.17432149322765442
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.1170959869495407,
+        "share": 0.10807483563842543
+      },
+      {
+        "name": "Time of day",
+        "value": 0.10202476757056825,
+        "share": 0.0941647128435683
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.097753932928908022,
+        "share": 0.090222906092025032
+      }
+    ],
+    "reward": -0.57656325821737175,
+    "Vmin": 0.99485706060701462,
+    "Vmax": 1.03813320554148,
+    "lossKW": 41.615498916705242,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:08",
+    "episode": 5,
+    "step": 17,
+    "hour": 16,
+    "scenario": "heavyLoad",
+    "action": [
+      0.22571444511413574,
+      0.90480470657348633,
+      -0.64458549022674561,
+      0.95457321405410767,
+      0.83944916725158691,
+      0.99557054042816162,
+      -0.08715357631444931,
+      0.17761333286762238,
+      0.034112296998500824
+    ],
+    "actionText": "Opened capacitor bank at bus 21 (-300 kvar); set PV inverter at bus 27 to -0.109 Mvar (absorbing; was -0.186 Mvar); set PV inverter at bus 35 to +0.219 Mvar (injecting; was +0.280 Mvar); set PV inverter at bus 61 to +0.043 Mvar (injecting; was -0.088 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0024799722711071935,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.020827948499001509,
+      "MainFeeder_endVoltages_bus19_27_": 0.014665092975878972,
+      "Head_endLateralVoltages_bus28_50_": -0.038079205810734762,
+      "LongLateralVoltages_bus53_60_": -0.0037743778705354421,
+      "LongLateralEndVoltages_bus61_65_": -0.014743306729796247,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.033903600439489479,
+      "LateralLoad_bus28_50_53_65_": 0.020429133822224194,
+      "PVActiveOutput": 0.0053706312852696792,
+      "AggregateLoadLevel": 0.001630794951389672,
+      "TimeOfDay": 0.0066661741521705786,
+      "PreviousControlAction": 0.078536840125333157
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": 0.078536840125333157,
+        "share": 0.32573427737134114
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.038079205810734762,
+        "share": 0.15793483119310367
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.033903600439489479,
+        "share": 0.14061636261173605
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.020827948499001509,
+        "share": 0.086384641177604124
+      },
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.020429133822224194,
+        "share": 0.084730543427582211
+      }
+    ],
+    "reward": -0.29073146203233224,
+    "Vmin": 0.97400577574462,
+    "Vmax": 1.0292343741198702,
+    "lossKW": 51.278101064183147,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:09",
+    "episode": 5,
+    "step": 20,
+    "hour": 19,
+    "scenario": "heavyLoad",
+    "action": [
+      0.33292990922927856,
+      0.85882472991943359,
+      -0.97754162549972534,
+      0.99815124273300171,
+      0.98775160312652588,
+      0.99965286254882812,
+      -0.023507218807935715,
+      -0.033314704895019531,
+      0.33859124779701233
+    ],
+    "actionText": "Raised OLTC tap from +1 to +2 (substation voltage 1.0125 -> 1.0250 p.u.); set PV inverter at bus 35 to -0.044 Mvar (absorbing; was +0.053 Mvar); set PV inverter at bus 61 to +0.451 Mvar (injecting; was +0.337 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0028606461294255281,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.011874878882594331,
+      "MainFeeder_endVoltages_bus19_27_": 0.016710169017470446,
+      "Head_endLateralVoltages_bus28_50_": 0.035620433325334371,
+      "LongLateralVoltages_bus53_60_": 0.0052206821818003464,
+      "LongLateralEndVoltages_bus61_65_": 0.014425016822765348,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0748550426138111,
+      "LateralLoad_bus28_50_53_65_": 0.051274761739542485,
+      "PVActiveOutput": 0.00353240195552877,
+      "AggregateLoadLevel": -0.0022495841764853786,
+      "TimeOfDay": 0.010132803954321173,
+      "PreviousControlAction": 0.0078326060193781664
+    },
+    "top_features": [
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.0748550426138111,
+        "share": 0.31639270688259707
+      },
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.051274761739542485,
+        "share": 0.21672502072079322
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": 0.035620433325334371,
+        "share": 0.15055826470205275
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.016710169017470446,
+        "share": 0.070629518376998573
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.014425016822765348,
+        "share": 0.060970777118222561
+      }
+    ],
+    "reward": -0.60381111863613457,
+    "Vmin": 0.95429484660909947,
+    "Vmax": 1.025,
+    "lossKW": 146.44491038888336,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:10",
+    "episode": 6,
+    "step": 1,
+    "hour": 0,
+    "scenario": "lightLoad",
+    "action": [
+      -0.02959107793867588,
+      -0.47139748930931091,
+      -0.9892393946647644,
+      0.96828895807266235,
+      0.99971556663513184,
+      0.99999773502349854,
+      0.019217770546674728,
+      -0.067967794835567474,
+      -0.084919862449169159
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.091 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.113 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.00070018982936387666,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0062544792184833463,
+      "MainFeeder_endVoltages_bus19_27_": 0.015837716744153692,
+      "Head_endLateralVoltages_bus28_50_": -0.0093364220965602759,
+      "LongLateralVoltages_bus53_60_": 0.0099539485982112746,
+      "LongLateralEndVoltages_bus61_65_": 0.0088519346122166338,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.013505651429631539,
+      "LateralLoad_bus28_50_53_65_": 0.005915617323188258,
+      "PVActiveOutput": 0.0089804464457946473,
+      "AggregateLoadLevel": 0.0018708814786374886,
+      "TimeOfDay": -0.0039159412397015364,
+      "PreviousControlAction": -0.037115441287281857
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.037115441287281857,
+        "share": 0.3036309311547119
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.015837716744153692,
+        "share": 0.12956388272930947
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.013505651429631539,
+        "share": 0.11048591575914163
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.0099539485982112746,
+        "share": 0.081430439103432464
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0093364220965602759,
+        "share": 0.076378629392813341
+      }
+    ],
+    "reward": -0.41321711918900728,
+    "Vmin": 0.978283313953789,
+    "Vmax": 1.0000484757004706,
+    "lossKW": 17.482983454643584,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:10",
+    "episode": 6,
+    "step": 3,
+    "hour": 2,
+    "scenario": "lightLoad",
+    "action": [
+      0.090559624135494232,
+      0.0014416965423151851,
+      -0.99533689022064209,
+      0.98633837699890137,
+      0.9997718334197998,
+      0.99999767541885376,
+      -0.013077010400593281,
+      -0.038127228617668152,
+      -0.084711581468582153
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to -0.051 Mvar (absorbing; was -0.116 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.012163463672957883,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.021605149716197918,
+      "MainFeeder_endVoltages_bus19_27_": -0.043702235657281263,
+      "Head_endLateralVoltages_bus28_50_": -0.0705511528508461,
+      "LongLateralVoltages_bus53_60_": -0.015370658121115943,
+      "LongLateralEndVoltages_bus61_65_": -9.4242926241337884E-5,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.10817267374060434,
+      "LateralLoad_bus28_50_53_65_": -0.032448590142748188,
+      "PVActiveOutput": -0.0087715543023623322,
+      "AggregateLoadLevel": 0.0078118539218642157,
+      "TimeOfDay": -0.10811953505057574,
+      "PreviousControlAction": -0.10710407325004556
+    },
+    "top_features": [
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.10817267374060434,
+        "share": 0.20184663002799197
+      },
+      {
+        "name": "Time of day",
+        "value": -0.10811953505057574,
+        "share": 0.20174747499062926
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.10710407325004556,
+        "share": 0.1998526568700133
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0705511528508461,
+        "share": 0.13164611685277811
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.043702235657281263,
+        "share": 0.081546925735276624
+      }
+    ],
+    "reward": -0.372612263584021,
+    "Vmin": 0.97877919574151473,
+    "Vmax": 1.0001428132893777,
+    "lossKW": 17.402689734659507,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:11",
+    "episode": 6,
+    "step": 17,
+    "hour": 16,
+    "scenario": "lightLoad",
+    "action": [
+      0.1028478667140007,
+      0.50517094135284424,
+      -0.9894140362739563,
+      0.99127870798110962,
+      0.99829405546188354,
+      0.99998557567596436,
+      -0.13437119126319885,
+      0.074948228895664215,
+      0.083126559853553772
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 35 to +0.100 Mvar (injecting; was +0.202 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.01141164808396765,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.010535388884062906,
+      "MainFeeder_endVoltages_bus19_27_": 0.0081900335061329925,
+      "Head_endLateralVoltages_bus28_50_": -0.032786565357103385,
+      "LongLateralVoltages_bus53_60_": 0.0013624097660006685,
+      "LongLateralEndVoltages_bus61_65_": 0.0014762081355099474,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.0060983612518507226,
+      "LateralLoad_bus28_50_53_65_": -0.0073518678988304543,
+      "PVActiveOutput": 0.0018360210342898804,
+      "AggregateLoadLevel": 0.0014768747001948192,
+      "TimeOfDay": 0.020716154063071562,
+      "PreviousControlAction": 0.012946532133140787
+    },
+    "top_features": [
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.032786565357103385,
+        "share": 0.28218531231711186
+      },
+      {
+        "name": "Time of day",
+        "value": 0.020716154063071562,
+        "share": 0.17829846891939635
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.012946532133140787,
+        "share": 0.11142738416246903
+      },
+      {
+        "name": "Head-end voltages (bus 2-9, 51-52)",
+        "value": -0.01141164808396765,
+        "share": 0.098217042363350493
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.010535388884062906,
+        "share": 0.090675310763755193
+      }
+    ],
+    "reward": -0.2171649226478399,
+    "Vmin": 0.98485340224876772,
+    "Vmax": 1.0159477995924731,
+    "lossKW": 29.149486305785789,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:12",
+    "episode": 7,
+    "step": 1,
+    "hour": 0,
+    "scenario": "nominal",
+    "action": [
+      -0.032166697084903717,
+      -0.48336175084114075,
+      -0.99244743585586548,
+      0.97953617572784424,
+      0.99955421686172485,
+      0.99999570846557617,
+      -0.013692927546799183,
+      -0.050941549241542816,
+      -0.04784335196018219
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.068 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.064 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0011462401517386023,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0076134265079445384,
+      "MainFeeder_endVoltages_bus19_27_": 0.018511108150567987,
+      "Head_endLateralVoltages_bus28_50_": -0.0083878178990239236,
+      "LongLateralVoltages_bus53_60_": 0.016356509779684121,
+      "LongLateralEndVoltages_bus61_65_": 0.016885803016840041,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0061322135700102517,
+      "LateralLoad_bus28_50_53_65_": 0.0015442713486497066,
+      "PVActiveOutput": 0.00814856444456929,
+      "AggregateLoadLevel": 0.00086330714473275237,
+      "TimeOfDay": -0.0036038049435562934,
+      "PreviousControlAction": -0.032628073762617879
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.032628073762617879,
+        "share": 0.2678358909610708
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.018511108150567987,
+        "share": 0.15195316708718637
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.016885803016840041,
+        "share": 0.13861143408318755
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.016356509779684121,
+        "share": 0.13426659513300274
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0083878178990239236,
+        "share": 0.068853549141420084
+      }
+    ],
+    "reward": -0.46633088682792767,
+    "Vmin": 0.96756783170046512,
+    "Vmax": 1,
+    "lossKW": 33.240067854189967,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:12",
+    "episode": 7,
+    "step": 3,
+    "hour": 2,
+    "scenario": "nominal",
+    "action": [
+      0.08117801696062088,
+      0.044102538377046585,
+      -0.99587017297744751,
+      0.99110543727874756,
+      0.99956870079040527,
+      0.99999457597732544,
+      -0.049717959016561508,
+      0.0050514065660536289,
+      -0.036302272230386734
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to +0.007 Mvar (injecting; was -0.063 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.016413783204359118,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.045532004088756024,
+      "MainFeeder_endVoltages_bus19_27_": -0.068666463154069823,
+      "Head_endLateralVoltages_bus28_50_": -0.069362460858893416,
+      "LongLateralVoltages_bus53_60_": 0.0029613557290344246,
+      "LongLateralEndVoltages_bus61_65_": -0.0014476778921317011,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.062282779157732115,
+      "LateralLoad_bus28_50_53_65_": -0.024646792009715469,
+      "PVActiveOutput": -0.0076173756660952207,
+      "AggregateLoadLevel": 0.0029248982026893796,
+      "TimeOfDay": -0.10135053850437506,
+      "PreviousControlAction": -0.085431711067030236
+    },
+    "top_features": [
+      {
+        "name": "Time of day",
+        "value": -0.10135053850437506,
+        "share": 0.20741442906027754
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.085431711067030236,
+        "share": 0.17483646200701489
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.069362460858893416,
+        "share": 0.14195065393404085
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.068666463154069823,
+        "share": 0.14052629084033103
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.062282779157732115,
+        "share": 0.12746204677275302
+      }
+    ],
+    "reward": -0.22850996935927262,
+    "Vmin": 0.968281570943178,
+    "Vmax": 1,
+    "lossKW": 32.433324741910049,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:13",
+    "episode": 7,
+    "step": 18,
+    "hour": 17,
+    "scenario": "nominal",
+    "action": [
+      0.1091378927230835,
+      0.56336754560470581,
+      -0.99090194702148438,
+      0.99640858173370361,
+      0.99606287479400635,
+      0.99995255470275879,
+      -0.042406294494867325,
+      0.092633284628391266,
+      0.21366378664970398
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 27 to -0.056 Mvar (absorbing; was -0.139 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.018883245144320535,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.019000324006657653,
+      "MainFeeder_endVoltages_bus19_27_": 0.0162642815399007,
+      "Head_endLateralVoltages_bus28_50_": -0.0370517701897046,
+      "LongLateralVoltages_bus53_60_": -0.0021844681343650006,
+      "LongLateralEndVoltages_bus61_65_": 0.0031613388831043141,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.011802194471723548,
+      "LateralLoad_bus28_50_53_65_": 0.0077180087825579847,
+      "PVActiveOutput": 0.0025215105506353796,
+      "AggregateLoadLevel": -0.0020298944707386694,
+      "TimeOfDay": 0.0094797790438319162,
+      "PreviousControlAction": 0.013112347333374214
+    },
+    "top_features": [
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0370517701897046,
+        "share": 0.25872485761189862
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.019000324006657653,
+        "share": 0.13267533772430623
+      },
+      {
+        "name": "Head-end voltages (bus 2-9, 51-52)",
+        "value": -0.018883245144320535,
+        "share": 0.13185780021307686
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.0162642815399007,
+        "share": 0.1135701183513194
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.013112347333374214,
+        "share": 0.0915608128684674
+      }
+    ],
+    "reward": -0.26744544551422139,
+    "Vmin": 0.96281030365153553,
+    "Vmax": 1.0148408361583472,
+    "lossKW": 74.929154263613782,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:14",
+    "episode": 8,
+    "step": 1,
+    "hour": 0,
+    "scenario": "reversePower",
+    "action": [
+      -0.032549850642681122,
+      -0.49355626106262207,
+      -0.99263709783554077,
+      0.97917306423187256,
+      0.999542772769928,
+      0.99999535083770752,
+      -0.008968752808868885,
+      -0.04479028657078743,
+      -0.055419921875
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.060 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.074 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.001157452417255352,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.00774530482308438,
+      "MainFeeder_endVoltages_bus19_27_": 0.01884234111341497,
+      "Head_endLateralVoltages_bus28_50_": -0.0084472794459345361,
+      "LongLateralVoltages_bus53_60_": 0.016372302111102542,
+      "LongLateralEndVoltages_bus61_65_": 0.016880311933917272,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0062625069534043305,
+      "LateralLoad_bus28_50_53_65_": 0.000983536473967937,
+      "PVActiveOutput": 0.0081437531540178524,
+      "AggregateLoadLevel": 0.0007503344332678378,
+      "TimeOfDay": -0.0036106503343318573,
+      "PreviousControlAction": -0.0328511653190834
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.0328511653190834,
+        "share": 0.26916828655757569
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.01884234111341497,
+        "share": 0.15438602019043324
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.016880311933917272,
+        "share": 0.13830999892020523
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.016372302111102542,
+        "share": 0.13414758543400768
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0084472794459345361,
+        "share": 0.069213366175914615
+      }
+    ],
+    "reward": -0.46656869395594941,
+    "Vmin": 0.96749384357397983,
+    "Vmax": 1,
+    "lossKW": 33.310617302169739,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:14",
+    "episode": 8,
+    "step": 3,
+    "hour": 2,
+    "scenario": "reversePower",
+    "action": [
+      0.073949962854385376,
+      0.054846368730068207,
+      -0.99613869190216064,
+      0.992037296295166,
+      0.99956792593002319,
+      0.99999463558197021,
+      -0.05366409569978714,
+      0.0053967256098985672,
+      -0.022078163921833038
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to +0.007 Mvar (injecting; was -0.070 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.017339742730472851,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.049809641293053292,
+      "MainFeeder_endVoltages_bus19_27_": -0.071083576097341311,
+      "Head_endLateralVoltages_bus28_50_": -0.0695011808051962,
+      "LongLateralVoltages_bus53_60_": 0.0079635639080947469,
+      "LongLateralEndVoltages_bus61_65_": -0.0015423315937549216,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.060821491220614518,
+      "LateralLoad_bus28_50_53_65_": -0.022176591099538068,
+      "PVActiveOutput": -0.0075988616602215174,
+      "AggregateLoadLevel": 0.0020693876783664405,
+      "TimeOfDay": -0.10056782040300731,
+      "PreviousControlAction": -0.076267121441702779
+    },
+    "top_features": [
+      {
+        "name": "Time of day",
+        "value": -0.10056782040300731,
+        "share": 0.20661451648143142
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.076267121441702779,
+        "share": 0.15668923077939967
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.071083576097341311,
+        "share": 0.14603974359062497
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0695011808051962,
+        "share": 0.142788745041995
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.060821491220614518,
+        "share": 0.12495650149191373
+      }
+    ],
+    "reward": -0.24567589212677868,
+    "Vmin": 0.96539226998144256,
+    "Vmax": 1,
+    "lossKW": 37.517288432543715,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:15",
+    "episode": 8,
+    "step": 11,
+    "hour": 10,
+    "scenario": "reversePower",
+    "action": [
+      0.040583271533250809,
+      0.88924849033355713,
+      0.25101402401924133,
+      0.68866229057312012,
+      0.944923460483551,
+      0.99865496158599854,
+      -0.04612061008810997,
+      0.60474729537963867,
+      -0.097093701362609863
+    ],
+    "actionText": "Closed capacitor bank at bus 21 (+300 kvar); set PV inverter at bus 27 to -0.038 Mvar (absorbing; was +0.015 Mvar); set PV inverter at bus 35 to +0.536 Mvar (injecting; was +0.615 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.00213548362626607,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.14529381468411015,
+      "MainFeeder_endVoltages_bus19_27_": 0.35987033235616994,
+      "Head_endLateralVoltages_bus28_50_": 0.031201793033540565,
+      "LongLateralVoltages_bus53_60_": 0.0667054297841884,
+      "LongLateralEndVoltages_bus61_65_": 0.093868725315371437,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0026202377824153253,
+      "LateralLoad_bus28_50_53_65_": 0.0244196110326588,
+      "PVActiveOutput": 0.19008910779884702,
+      "AggregateLoadLevel": -3.2702202134969989E-5,
+      "TimeOfDay": 0.090809794096919791,
+      "PreviousControlAction": 0.024717569618287583
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.35987033235616994,
+        "share": 0.34879112143599461
+      },
+      {
+        "name": "PV active output",
+        "value": 0.19008910779884702,
+        "share": 0.18423689623935957
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.14529381468411015,
+        "share": 0.14082070124977197
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.093868725315371437,
+        "share": 0.090978819387956156
+      },
+      {
+        "name": "Time of day",
+        "value": 0.090809794096919791,
+        "share": 0.08801406249039849
+      }
+    ],
+    "reward": -0.75449147976703512,
+    "Vmin": 0.99732756011098844,
+    "Vmax": 1.0434898840379632,
+    "lossKW": 72.656932425311041,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:16",
+    "episode": 8,
+    "step": 17,
+    "hour": 16,
+    "scenario": "reversePower",
+    "action": [
+      0.1075025349855423,
+      0.91973274946212769,
+      0.14099542796611786,
+      0.82515251636505127,
+      0.85185861587524414,
+      0.99733495712280273,
+      -0.30020603537559509,
+      0.28136745095252991,
+      0.056089505553245544
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.0046435619762302035,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.018759546107383177,
+      "MainFeeder_endVoltages_bus19_27_": -0.018789409957667966,
+      "Head_endLateralVoltages_bus28_50_": -0.022514060748113348,
+      "LongLateralVoltages_bus53_60_": -5.4500139571580987E-5,
+      "LongLateralEndVoltages_bus61_65_": -0.0025179834214378695,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0034001522244254071,
+      "LateralLoad_bus28_50_53_65_": 0.012814191470121718,
+      "PVActiveOutput": -0.008326475233098889,
+      "AggregateLoadLevel": -0.0009616426455672048,
+      "TimeOfDay": 0.036833594326843744,
+      "PreviousControlAction": -0.029747425689413007
+    },
+    "top_features": [
+      {
+        "name": "Time of day",
+        "value": 0.036833594326843744,
+        "share": 0.23113081290130935
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.029747425689413007,
+        "share": 0.18666510306610321
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.022514060748113348,
+        "share": 0.14127573639014995
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.018789409957667966,
+        "share": 0.11790355182053958
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.018759546107383177,
+        "share": 0.11771615615311062
+      }
+    ],
+    "reward": -0.44070591793292846,
+    "Vmin": 0.9979805559942998,
+    "Vmax": 1.0376904154043796,
+    "lossKW": 41.7153430302684,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:16",
+    "episode": 8,
+    "step": 18,
+    "hour": 17,
+    "scenario": "reversePower",
+    "action": [
+      0.23065489530563354,
+      0.92523413896560669,
+      -0.44350108504295349,
+      0.93101418018341064,
+      0.78889316320419312,
+      0.99328649044036865,
+      -0.18381810188293457,
+      0.21536368131637573,
+      0.018367085605859756
+    ],
+    "actionText": "Opened capacitor bank at bus 21 (-300 kvar); set PV inverter at bus 27 to -0.222 Mvar (absorbing; was -0.326 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0020785040251445177,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0492819536769859,
+      "MainFeeder_endVoltages_bus19_27_": 0.069492985188968237,
+      "Head_endLateralVoltages_bus28_50_": -0.047180651519893507,
+      "LongLateralVoltages_bus53_60_": 0.010837328518065591,
+      "LongLateralEndVoltages_bus61_65_": 0.00052927742394147988,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.058546040354191392,
+      "LateralLoad_bus28_50_53_65_": 0.037595008778118708,
+      "PVActiveOutput": 0.030490367854125379,
+      "AggregateLoadLevel": 0.0015884708559258094,
+      "TimeOfDay": -0.010626190379957467,
+      "PreviousControlAction": 0.12696858843808018
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": 0.12696858843808018,
+        "share": 0.28518464959961548
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.069492985188968237,
+        "share": 0.15608846939660315
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.058546040354191392,
+        "share": 0.13150049322630303
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.0492819536769859,
+        "share": 0.1106923914319939
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.047180651519893507,
+        "share": 0.1059726483306082
+      }
+    ],
+    "reward": -0.3970028054733975,
+    "Vmin": 0.97590135748152507,
+    "Vmax": 1.0308224812068671,
+    "lossKW": 55.295346541047579,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:17",
+    "episode": 9,
+    "step": 1,
+    "hour": 0,
+    "scenario": "nominal",
+    "action": [
+      -0.025617022067308426,
+      -0.4748070240020752,
+      -0.99074876308441162,
+      0.97502046823501587,
+      0.99951493740081787,
+      0.99999505281448364,
+      -0.014760732650756836,
+      -0.059593051671981812,
+      -0.053226426243782043
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.079 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.071 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0010304608585717497,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.00757640557962338,
+      "MainFeeder_endVoltages_bus19_27_": 0.018676019621382045,
+      "Head_endLateralVoltages_bus28_50_": -0.00892338451313214,
+      "LongLateralVoltages_bus53_60_": 0.014567278261604899,
+      "LongLateralEndVoltages_bus61_65_": 0.014485397362462734,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0074281394719361354,
+      "LateralLoad_bus28_50_53_65_": 0.0020886297080690052,
+      "PVActiveOutput": 0.0086224189378229978,
+      "AggregateLoadLevel": 0.0010893673549841679,
+      "TimeOfDay": -0.00377547700706639,
+      "PreviousControlAction": -0.03476371080903571
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.03476371080903571,
+        "share": 0.28257048087991438
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.018676019621382045,
+        "share": 0.1518046181642087
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.014567278261604899,
+        "share": 0.11840746363657254
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.014485397362462734,
+        "share": 0.11774190968657629
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.00892338451313214,
+        "share": 0.072532102996805237
+      }
+    ],
+    "reward": -0.44606865157151648,
+    "Vmin": 0.97174023324250536,
+    "Vmax": 1,
+    "lossKW": 27.228938061454642,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:18",
+    "episode": 9,
+    "step": 3,
+    "hour": 2,
+    "scenario": "nominal",
+    "action": [
+      0.086710624396801,
+      0.032451611012220383,
+      -0.99614852666854858,
+      0.99110698699951172,
+      0.99966627359390259,
+      0.99999618530273438,
+      -0.0409403070807457,
+      -0.0072985696606338024,
+      -0.047461774200201035
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to -0.010 Mvar (absorbing; was -0.091 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.01591815483498444,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.041470426636730791,
+      "MainFeeder_endVoltages_bus19_27_": -0.064321324718000061,
+      "Head_endLateralVoltages_bus28_50_": -0.070014572103584749,
+      "LongLateralVoltages_bus53_60_": 0.0019037198443314697,
+      "LongLateralEndVoltages_bus61_65_": -0.0013813622770923774,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.067809297424700127,
+      "LateralLoad_bus28_50_53_65_": -0.036594505873758162,
+      "PVActiveOutput": -0.0073589489185616093,
+      "AggregateLoadLevel": 0.0039286854393226151,
+      "TimeOfDay": -0.10202397639191296,
+      "PreviousControlAction": -0.087285457985637666
+    },
+    "top_features": [
+      {
+        "name": "Time of day",
+        "value": -0.10202397639191296,
+        "share": 0.20404369543308948
+      },
+      {
+        "name": "Previous control action",
+        "value": -0.087285457985637666,
+        "share": 0.17456727364305036
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.070014572103584749,
+        "share": 0.14002622257442543
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.067809297424700127,
+        "share": 0.1356157652403952
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.064321324718000061,
+        "share": 0.12863996537634237
+      }
+    ],
+    "reward": -0.3200492271424511,
+    "Vmin": 0.96913020371686909,
+    "Vmax": 1,
+    "lossKW": 30.426562084455011,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:18",
+    "episode": 9,
+    "step": 14,
+    "hour": 13,
+    "scenario": "nominal",
+    "action": [
+      0.0212212223559618,
+      0.9042171835899353,
+      0.0025164468679577112,
+      0.80257272720336914,
+      0.9815908670425415,
+      0.99979835748672485,
+      -0.16309569776058197,
+      0.529862642288208,
+      -0.021604295819997787
+    ],
+    "actionText": "Closed capacitor bank at bus 21 (+300 kvar); set PV inverter at bus 27 to -0.175 Mvar (absorbing; was -0.116 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0030517901788441339,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.10506045929226696,
+      "MainFeeder_endVoltages_bus19_27_": 0.23215127551081507,
+      "Head_endLateralVoltages_bus28_50_": 0.030980821743521476,
+      "LongLateralVoltages_bus53_60_": 0.065629441403297462,
+      "LongLateralEndVoltages_bus61_65_": 0.097761754211690421,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.046324983758773738,
+      "LateralLoad_bus28_50_53_65_": -0.0332124449985606,
+      "PVActiveOutput": 0.12757428944910548,
+      "AggregateLoadLevel": -0.0018374992552400572,
+      "TimeOfDay": 0.088662471050187042,
+      "PreviousControlAction": 0.11236471272062676
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.23215127551081507,
+        "share": 0.24576364621509977
+      },
+      {
+        "name": "PV active output",
+        "value": 0.12757428944910548,
+        "share": 0.13505470719178567
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.11236471272062676,
+        "share": 0.11895330509543957
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.10506045929226696,
+        "share": 0.1112207610829936
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.097761754211690421,
+        "share": 0.103494090750021
+      }
+    ],
+    "reward": -0.338790771967311,
+    "Vmin": 0.99926285216616084,
+    "Vmax": 1.0326325637035594,
+    "lossKW": 50.055445573199947,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:19",
+    "episode": 9,
+    "step": 16,
+    "hour": 15,
+    "scenario": "nominal",
+    "action": [
+      0.064219452440738678,
+      0.893656313419342,
+      -0.27341577410697937,
+      0.85276228189468384,
+      0.96705806255340576,
+      0.99963122606277466,
+      -0.16693006455898285,
+      0.40146651864051819,
+      -0.031748972833156586
+    ],
+    "actionText": "Opened capacitor bank at bus 21 (-300 kvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.00077531566898343218,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.063728356863144209,
+      "MainFeeder_endVoltages_bus19_27_": 0.15247715316032937,
+      "Head_endLateralVoltages_bus28_50_": 0.032192774733345961,
+      "LongLateralVoltages_bus53_60_": 0.025999615633548485,
+      "LongLateralEndVoltages_bus61_65_": 0.045286916335936844,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.029198982916593865,
+      "LateralLoad_bus28_50_53_65_": -0.013942156544860626,
+      "PVActiveOutput": 0.06883611713678911,
+      "AggregateLoadLevel": -0.00077984885422176676,
+      "TimeOfDay": 0.039570439597286025,
+      "PreviousControlAction": 0.11939564914880132
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.15247715316032937,
+        "share": 0.25748302309921067
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.11939564914880132,
+        "share": 0.20161940363223171
+      },
+      {
+        "name": "PV active output",
+        "value": 0.06883611713678911,
+        "share": 0.11624122808847932
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.063728356863144209,
+        "share": 0.10761592567913245
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.045286916335936844,
+        "share": 0.076474487379476069
+      }
+    ],
+    "reward": -0.37771324242280013,
+    "Vmin": 0.98705880042576433,
+    "Vmax": 1.0222879648437373,
+    "lossKW": 39.086958356055824,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:20",
+    "episode": 9,
+    "step": 18,
+    "hour": 17,
+    "scenario": "nominal",
+    "action": [
+      0.10075485706329346,
+      0.67467939853668213,
+      -0.96877741813659668,
+      0.986504852771759,
+      0.98951858282089233,
+      0.99984055757522583,
+      -0.1224861666560173,
+      0.17996776103973389,
+      0.09023478627204895
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 27 to -0.158 Mvar (absorbing; was -0.238 Mvar); set PV inverter at bus 35 to +0.231 Mvar (injecting; was +0.356 Mvar); set PV inverter at bus 61 to +0.116 Mvar (injecting; was +0.013 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.015846457605862785,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.011557510612356731,
+      "MainFeeder_endVoltages_bus19_27_": 0.003213651484606006,
+      "Head_endLateralVoltages_bus28_50_": -0.031197069264332897,
+      "LongLateralVoltages_bus53_60_": -0.00044075247642626951,
+      "LongLateralEndVoltages_bus61_65_": 0.0019620930660996386,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.00302246889377939,
+      "LateralLoad_bus28_50_53_65_": 0.01117874030836471,
+      "PVActiveOutput": -0.0051674637538000343,
+      "AggregateLoadLevel": -0.0015572890617234481,
+      "TimeOfDay": 0.018503056075758612,
+      "PreviousControlAction": 0.00554179655261458
+    },
+    "top_features": [
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.031197069264332897,
+        "share": 0.28571793149688013
+      },
+      {
+        "name": "Time of day",
+        "value": 0.018503056075758612,
+        "share": 0.16945998560129741
+      },
+      {
+        "name": "Head-end voltages (bus 2-9, 51-52)",
+        "value": -0.015846457605862785,
+        "share": 0.14512956490680584
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.011557510612356731,
+        "share": 0.10584930261994654
+      },
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.01117874030836471,
+        "share": 0.1023803399795112
+      }
+    ],
+    "reward": -0.28913698067545551,
+    "Vmin": 0.97844288844080018,
+    "Vmax": 1.0248261264619309,
+    "lossKW": 40.60770187667309,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:20",
+    "episode": 10,
+    "step": 1,
+    "hour": 0,
+    "scenario": "lightLoad",
+    "action": [
+      -0.033249534666538239,
+      -0.47893369197845459,
+      -0.98914259672164917,
+      0.9670403003692627,
+      0.99974906444549561,
+      0.99999809265136719,
+      0.017001768574118614,
+      -0.060389850288629532,
+      -0.0832708552479744
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.081 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.111 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.00062411700929400978,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0059576393375885533,
+      "MainFeeder_endVoltages_bus19_27_": 0.015149988865608872,
+      "Head_endLateralVoltages_bus28_50_": -0.0093455449529335,
+      "LongLateralVoltages_bus53_60_": 0.0088685462394767055,
+      "LongLateralEndVoltages_bus61_65_": 0.0076061423673579511,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.015120286345891791,
+      "LateralLoad_bus28_50_53_65_": 0.006754991425920967,
+      "PVActiveOutput": 0.0089643952749706,
+      "AggregateLoadLevel": 0.0020136633562831264,
+      "TimeOfDay": -0.0039594223523750447,
+      "PreviousControlAction": -0.037468364861747511
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.037468364861747511,
+        "share": 0.30753846144356628
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.015149988865608872,
+        "share": 0.12435034952307787
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.015120286345891791,
+        "share": 0.12410655272947629
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0093455449529335,
+        "share": 0.076707764717833138
+      },
+      {
+        "name": "PV active output",
+        "value": 0.0089643952749706,
+        "share": 0.073579307258508767
+      }
+    ],
+    "reward": -0.40792386891046922,
+    "Vmin": 0.97962951564917955,
+    "Vmax": 1.000143785880006,
+    "lossKW": 15.912652538677282,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:21",
+    "episode": 10,
+    "step": 3,
+    "hour": 2,
+    "scenario": "lightLoad",
+    "action": [
+      0.0828050747513771,
+      0.016808032989501953,
+      -0.99569219350814819,
+      0.98687118291854858,
+      0.99981909990310669,
+      0.99999845027923584,
+      -0.0027299353387206793,
+      -0.030117744579911232,
+      -0.084634624421596527
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to -0.040 Mvar (absorbing; was -0.100 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.012346900642158619,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.019284872153789767,
+      "MainFeeder_endVoltages_bus19_27_": -0.039532389088816441,
+      "Head_endLateralVoltages_bus28_50_": -0.070031630593342165,
+      "LongLateralVoltages_bus53_60_": -0.013603570856504897,
+      "LongLateralEndVoltages_bus61_65_": 9.3643276871368684E-5,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.099609360854255508,
+      "LateralLoad_bus28_50_53_65_": -0.030307577729132913,
+      "PVActiveOutput": -0.0087775574493554626,
+      "AggregateLoadLevel": 0.0087282047593330216,
+      "TimeOfDay": -0.10833096509345062,
+      "PreviousControlAction": -0.11207983262154261
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.11207983262154261,
+        "share": 0.21441390770135738
+      },
+      {
+        "name": "Time of day",
+        "value": -0.10833096509345062,
+        "share": 0.20724215059437512
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.099609360854255508,
+        "share": 0.19055731798345352
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.070031630593342165,
+        "share": 0.13397375091484814
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.039532389088816441,
+        "share": 0.075627290182751633
+      }
+    ],
+    "reward": -0.27903037724397028,
+    "Vmin": 0.97821554207700456,
+    "Vmax": 1.0001356616958121,
+    "lossKW": 17.9973118426683,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:22",
+    "episode": 10,
+    "step": 14,
+    "hour": 13,
+    "scenario": "lightLoad",
+    "action": [
+      0.0023472628090530634,
+      0.90783476829528809,
+      0.11197136342525482,
+      0.80448436737060547,
+      0.99259507656097412,
+      0.99992650747299194,
+      -0.16196386516094208,
+      0.48637545108795166,
+      0.01340215653181076
+    ],
+    "actionText": "Closed capacitor bank at bus 21 (+300 kvar); set PV inverter at bus 35 to +0.499 Mvar (injecting; was +0.596 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0066761424887682806,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.13922791477781216,
+      "MainFeeder_endVoltages_bus19_27_": 0.26625651453579191,
+      "Head_endLateralVoltages_bus28_50_": 0.025591859070349054,
+      "LongLateralVoltages_bus53_60_": 0.11265260714831665,
+      "LongLateralEndVoltages_bus61_65_": 0.1539579964066301,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.088789156327574573,
+      "LateralLoad_bus28_50_53_65_": -0.071478447712688811,
+      "PVActiveOutput": 0.12223413662336399,
+      "AggregateLoadLevel": -0.0024183614007544227,
+      "TimeOfDay": 0.095630929076756369,
+      "PreviousControlAction": 0.13370171065807229
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.26625651453579191,
+        "share": 0.21849094663798363
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.1539579964066301,
+        "share": 0.12633842381666871
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.13922791477781216,
+        "share": 0.11425087176279185
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.13370171065807229,
+        "share": 0.10971605100341329
+      },
+      {
+        "name": "PV active output",
+        "value": 0.12223413662336399,
+        "share": 0.10030572310644924
+      }
+    ],
+    "reward": -0.36233534833953784,
+    "Vmin": 0.99946007948037718,
+    "Vmax": 1.0339946394778738,
+    "lossKW": 51.464723437425825,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:22",
+    "episode": 10,
+    "step": 16,
+    "hour": 15,
+    "scenario": "lightLoad",
+    "action": [
+      0.028584448620676994,
+      0.89371562004089355,
+      -0.19636049866676331,
+      0.84861600399017334,
+      0.988985538482666,
+      0.9998975396156311,
+      -0.17468568682670593,
+      0.3697722852230072,
+      -0.00073639873880892992
+    ],
+    "actionText": "Opened capacitor bank at bus 21 (-300 kvar); set PV inverter at bus 35 to +0.440 Mvar (injecting; was +0.506 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0035085778083242688,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.085832639229793575,
+      "MainFeeder_endVoltages_bus19_27_": 0.17143488873991763,
+      "Head_endLateralVoltages_bus28_50_": 0.027337857263885879,
+      "LongLateralVoltages_bus53_60_": 0.063566570101736386,
+      "LongLateralEndVoltages_bus61_65_": 0.091742322094320178,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.076935930196894056,
+      "LateralLoad_bus28_50_53_65_": -0.042135639731553279,
+      "PVActiveOutput": 0.063873064730385551,
+      "AggregateLoadLevel": -0.0021119376268487981,
+      "TimeOfDay": 0.045003189834093182,
+      "PreviousControlAction": 0.15138298288511129
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.17143488873991763,
+        "share": 0.20783372308099923
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.15138298288511129,
+        "share": 0.18352442245202102
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.091742322094320178,
+        "share": 0.11122093352821187
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.085832639229793575,
+        "share": 0.10405651442431589
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.076935930196894056,
+        "share": 0.0932708676107258
+      }
+    ],
+    "reward": -0.457660173671261,
+    "Vmin": 0.99866716280844314,
+    "Vmax": 1.0224136921045734,
+    "lossKW": 30.98681325258018,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:23",
+    "episode": 11,
+    "step": 1,
+    "hour": 0,
+    "scenario": "lightLoad",
+    "action": [
+      -0.031210288405418396,
+      -0.469611793756485,
+      -0.98947322368621826,
+      0.9689561128616333,
+      0.99971908330917358,
+      0.99999779462814331,
+      0.01036287285387516,
+      -0.071102134883403778,
+      -0.083316773176193237
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar); set PV inverter at bus 35 to -0.095 Mvar (absorbing; was +0.000 Mvar); set PV inverter at bus 61 to -0.111 Mvar (absorbing; was +0.000 Mvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.00070937198741646574,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.0062929615415337169,
+      "MainFeeder_endVoltages_bus19_27_": 0.015807340492331151,
+      "Head_endLateralVoltages_bus28_50_": -0.0092238684379210983,
+      "LongLateralVoltages_bus53_60_": 0.0099027583266885384,
+      "LongLateralEndVoltages_bus61_65_": 0.0088077665112602319,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.013539856953582046,
+      "LateralLoad_bus28_50_53_65_": 0.0062982123171605679,
+      "PVActiveOutput": 0.008940186165625981,
+      "AggregateLoadLevel": 0.0018496743689793839,
+      "TimeOfDay": -0.00391324166227657,
+      "PreviousControlAction": -0.036875198324598069
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.036875198324598069,
+        "share": 0.30185876215897783
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.015807340492331151,
+        "share": 0.12939819854087733
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.013539856953582046,
+        "share": 0.11083667737432987
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.0099027583266885384,
+        "share": 0.081063546943955178
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0092238684379210983,
+        "share": 0.075506183979784078
+      }
+    ],
+    "reward": -0.41360261043160718,
+    "Vmin": 0.97829197018121161,
+    "Vmax": 1.0000962742301998,
+    "lossKW": 17.597345856614879,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:24",
+    "episode": 11,
+    "step": 3,
+    "hour": 2,
+    "scenario": "lightLoad",
+    "action": [
+      0.0896967351436615,
+      0.0066273980773985386,
+      -0.99577921628952026,
+      0.9875749945640564,
+      0.9997941255569458,
+      0.99999809265136719,
+      -0.024155654013156891,
+      -0.034553900361061096,
+      -0.08925144374370575
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 35 to -0.046 Mvar (absorbing; was -0.105 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.012705320267229338,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.023354594747438569,
+      "MainFeeder_endVoltages_bus19_27_": -0.044777837873121548,
+      "Head_endLateralVoltages_bus28_50_": -0.070393987521942952,
+      "LongLateralVoltages_bus53_60_": -0.01289911429913824,
+      "LongLateralEndVoltages_bus61_65_": -0.00062920349611415827,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.10194466449273416,
+      "LateralLoad_bus28_50_53_65_": -0.026770071652118824,
+      "PVActiveOutput": -0.0082970375442021748,
+      "AggregateLoadLevel": 0.0078679421935523314,
+      "TimeOfDay": -0.10742168424817494,
+      "PreviousControlAction": -0.11365968538263554
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.11365968538263554,
+        "share": 0.21416083894133045
+      },
+      {
+        "name": "Time of day",
+        "value": -0.10742168424817494,
+        "share": 0.20240701829880781
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": -0.10194466449273416,
+        "share": 0.19208706059547037
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.070393987521942952,
+        "share": 0.13263837017824479
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.044777837873121548,
+        "share": 0.084371686342461574
+      }
+    ],
+    "reward": -0.28235709268450654,
+    "Vmin": 0.977489786610639,
+    "Vmax": 1.0001173067166615,
+    "lossKW": 18.769863463045787,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:24",
+    "episode": 12,
+    "step": 1,
+    "hour": 0,
+    "scenario": "heavyLoad",
+    "action": [
+      -0.04571450874209404,
+      -0.42808765172958374,
+      -0.99380344152450562,
+      0.986767590045929,
+      0.99921733140945435,
+      0.9999920129776001,
+      -0.00717077124863863,
+      0.0013197935186326504,
+      -0.025596350431442261
+    ],
+    "actionText": "Closed capacitor bank at bus 50 (+300 kvar); closed capacitor bank at bus 61 (+300 kvar); closed capacitor bank at bus 64 (+300 kvar).",
+    "explainedChannel": "Cap bank bus 50",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0015185374150410169,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.00873362620337297,
+      "MainFeeder_endVoltages_bus19_27_": 0.02037411362576487,
+      "Head_endLateralVoltages_bus28_50_": -0.0076713485711806676,
+      "LongLateralVoltages_bus53_60_": 0.022010549202576214,
+      "LongLateralEndVoltages_bus61_65_": 0.024057491185529321,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.0016149739246656882,
+      "LateralLoad_bus28_50_53_65_": -0.002110533903468497,
+      "PVActiveOutput": 0.0074846599192068394,
+      "AggregateLoadLevel": -0.0001289767472034466,
+      "TimeOfDay": -0.0032990409440460462,
+      "PreviousControlAction": -0.02956557045878868
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.02956557045878868,
+        "share": 0.22995802559957637
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.024057491185529321,
+        "share": 0.18711674045372684
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.022010549202576214,
+        "share": 0.17119583212649195
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.02037411362576487,
+        "share": 0.15846780123025134
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.00873362620337297,
+        "share": 0.067929263900110684
+      }
+    ],
+    "reward": -0.55641319755324559,
+    "Vmin": 0.954320103832512,
+    "Vmax": 1,
+    "lossKW": 59.964486702700945,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:25",
+    "episode": 12,
+    "step": 2,
+    "hour": 1,
+    "scenario": "heavyLoad",
+    "action": [
+      0.079809397459030151,
+      0.046313069760799408,
+      -0.99571549892425537,
+      0.99322938919067383,
+      0.9991951584815979,
+      0.99998515844345093,
+      -0.019383594393730164,
+      -0.0010896698804572225,
+      0.023050909861922264
+    ],
+    "actionText": "Closed capacitor bank at bus 12 (+300 kvar); set PV inverter at bus 61 to +0.031 Mvar (injecting; was -0.034 Mvar).",
+    "explainedChannel": "Cap bank bus 12",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.021167989304248583,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.063665306835765836,
+      "MainFeeder_endVoltages_bus19_27_": -0.076391840611322787,
+      "Head_endLateralVoltages_bus28_50_": -0.0693061234522074,
+      "LongLateralVoltages_bus53_60_": 0.017139673306470954,
+      "LongLateralEndVoltages_bus61_65_": -0.00037210101452746756,
+      "Main_feederLoad_bus2_27_51_52_66_69_": -0.0098939179786231186,
+      "LateralLoad_bus28_50_53_65_": -0.0024239789045574669,
+      "PVActiveOutput": -0.0058199158638530509,
+      "AggregateLoadLevel": -0.0014661045017659905,
+      "TimeOfDay": -0.093480769044068893,
+      "PreviousControlAction": -0.14974917568406948
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": -0.14974917568406948,
+        "share": 0.29312183954600768
+      },
+      {
+        "name": "Time of day",
+        "value": -0.093480769044068893,
+        "share": 0.18298100713543994
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": -0.076391840611322787,
+        "share": 0.14953081874412252
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.0693061234522074,
+        "share": 0.13566110334372203
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.063665306835765836,
+        "share": 0.12461966331174908
+      }
+    ],
+    "reward": -0.43285641494993371,
+    "Vmin": 0.95997407738912222,
+    "Vmax": 1,
+    "lossKW": 49.15669036525891,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:26",
+    "episode": 12,
+    "step": 6,
+    "hour": 5,
+    "scenario": "heavyLoad",
+    "action": [
+      0.10221865773200989,
+      0.33323904871940613,
+      -0.99427998065948486,
+      0.99470973014831543,
+      0.99844205379486084,
+      0.99997842311859131,
+      0.068008370697498322,
+      0.22690019011497498,
+      0.0638149157166481
+    ],
+    "actionText": "Raised OLTC tap from +0 to +1 (substation voltage 1.0000 -> 1.0125 p.u.); set PV inverter at bus 27 to +0.091 Mvar (injecting; was +0.028 Mvar); set PV inverter at bus 35 to +0.303 Mvar (injecting; was +0.239 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": -0.016034640095392717,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.016336651776076367,
+      "MainFeeder_endVoltages_bus19_27_": 0.025091999073525325,
+      "Head_endLateralVoltages_bus28_50_": -0.036125310863154639,
+      "LongLateralVoltages_bus53_60_": -0.0043464853440964707,
+      "LongLateralEndVoltages_bus61_65_": 0.0013103533836653347,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0003283724909686144,
+      "LateralLoad_bus28_50_53_65_": 0.013299381796661406,
+      "PVActiveOutput": 0.005753380653854263,
+      "AggregateLoadLevel": -0.0014722466628670162,
+      "TimeOfDay": -0.0091366816863173543,
+      "PreviousControlAction": 0.015842444198693323
+    },
+    "top_features": [
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.036125310863154639,
+        "share": 0.24900621600232134
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.025091999073525325,
+        "share": 0.17295529344786606
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": -0.016336651776076367,
+        "share": 0.11260603005792784
+      },
+      {
+        "name": "Head-end voltages (bus 2-9, 51-52)",
+        "value": -0.016034640095392717,
+        "share": 0.11052430995646184
+      },
+      {
+        "name": "Previous control action",
+        "value": 0.015842444198693323,
+        "share": 0.10919953317738916
+      }
+    ],
+    "reward": -0.25441146029090533,
+    "Vmin": 0.96408995636195283,
+    "Vmax": 1.0150592747503453,
+    "lossKW": 70.572906532368819,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:26",
+    "episode": 12,
+    "step": 13,
+    "hour": 12,
+    "scenario": "heavyLoad",
+    "action": [
+      0.16660638153553009,
+      0.92711776494979858,
+      0.12155324220657349,
+      0.73920530080795288,
+      0.86334985494613647,
+      0.99417972564697266,
+      -0.021046726033091545,
+      0.46342271566390991,
+      -0.14584040641784668
+    ],
+    "actionText": "Closed capacitor bank at bus 21 (+300 kvar); set PV inverter at bus 61 to -0.168 Mvar (absorbing; was -0.110 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.012449641998715717,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.17235518433440561,
+      "MainFeeder_endVoltages_bus19_27_": 0.2854101251423784,
+      "Head_endLateralVoltages_bus28_50_": -0.05055846351638113,
+      "LongLateralVoltages_bus53_60_": 0.09200220554170771,
+      "LongLateralEndVoltages_bus61_65_": 0.0881607224480163,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.0045402897598335731,
+      "LateralLoad_bus28_50_53_65_": 0.030605865286228922,
+      "PVActiveOutput": 0.09795383050560913,
+      "AggregateLoadLevel": 0.00024933795716511141,
+      "TimeOfDay": 0.094640293408628659,
+      "PreviousControlAction": 0.062985783004015722
+    },
+    "top_features": [
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.2854101251423784,
+        "share": 0.28773741936661817
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.17235518433440561,
+        "share": 0.17376060477917485
+      },
+      {
+        "name": "PV active output",
+        "value": 0.09795383050560913,
+        "share": 0.098752566653684273
+      },
+      {
+        "name": "Time of day",
+        "value": 0.094640293408628659,
+        "share": 0.095412010277889633
+      },
+      {
+        "name": "Long lateral voltages (bus 53-60)",
+        "value": 0.09200220554170771,
+        "share": 0.092752410887322986
+      }
+    ],
+    "reward": -0.49168191892557411,
+    "Vmin": 0.9937018243866943,
+    "Vmax": 1.036395183832358,
+    "lossKW": 42.588181677178333,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:27",
+    "episode": 12,
+    "step": 16,
+    "hour": 15,
+    "scenario": "heavyLoad",
+    "action": [
+      0.20617036521434784,
+      0.92062747478485107,
+      -0.30991443991661072,
+      0.90371453762054443,
+      0.78894722461700439,
+      0.99401980638504028,
+      -0.10045912861824036,
+      0.29672619700431824,
+      -0.038133904337882996
+    ],
+    "actionText": "Opened capacitor bank at bus 21 (-300 kvar); set PV inverter at bus 61 to -0.047 Mvar (absorbing; was -0.122 Mvar).",
+    "explainedChannel": "Cap bank bus 21",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0038022592298223453,
+      "Mid_feederVoltages_bus10_18_66_69_": 0.072974854184968546,
+      "MainFeeder_endVoltages_bus19_27_": 0.11535267908669256,
+      "Head_endLateralVoltages_bus28_50_": -0.046955989927315124,
+      "LongLateralVoltages_bus53_60_": 0.017660380910692823,
+      "LongLateralEndVoltages_bus61_65_": 0.0057059183470371533,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.046893981134485827,
+      "LateralLoad_bus28_50_53_65_": 0.029457527528613563,
+      "PVActiveOutput": 0.035516337794780584,
+      "AggregateLoadLevel": 0.0017254120856879994,
+      "TimeOfDay": 0.036212815339860538,
+      "PreviousControlAction": 0.14585151444314526
+    },
+    "top_features": [
+      {
+        "name": "Previous control action",
+        "value": 0.14585151444314526,
+        "share": 0.26133127999685296
+      },
+      {
+        "name": "Main feeder-end voltages (bus 19-27)",
+        "value": 0.11535267908669256,
+        "share": 0.20668460928832233
+      },
+      {
+        "name": "Mid-feeder voltages (bus 10-18, 66-69)",
+        "value": 0.072974854184968546,
+        "share": 0.13075361009827222
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": -0.046955989927315124,
+        "share": 0.08413398378532444
+      },
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.046893981134485827,
+        "share": 0.084022878753175753
+      }
+    ],
+    "reward": -0.33924537385233383,
+    "Vmin": 0.97806834810124055,
+    "Vmax": 1.0307532075132255,
+    "lossKW": 48.5657290283443,
+    "nViolated": 0
+  },
+  {
+    "timestamp": "2026-11-12T13:55:28",
+    "episode": 12,
+    "step": 19,
+    "hour": 18,
+    "scenario": "heavyLoad",
+    "action": [
+      0.34890669584274292,
+      0.89944261312484741,
+      -0.94780874252319336,
+      0.99665135145187378,
+      0.97427242994308472,
+      0.99907463788986206,
+      -0.046351909637451172,
+      0.0464373379945755,
+      0.29088220000267029
+    ],
+    "actionText": "Raised OLTC tap from +1 to +2 (substation voltage 1.0125 -> 1.0250 p.u.); set PV inverter at bus 35 to +0.061 Mvar (injecting; was +0.144 Mvar); set PV inverter at bus 61 to +0.385 Mvar (injecting; was +0.274 Mvar).",
+    "explainedChannel": "OLTC tap",
+    "shap_values": {
+      "Head_endVoltages_bus2_9_51_52_": 0.0034250270060413581,
+      "Mid_feederVoltages_bus10_18_66_69_": -0.0095617833408927211,
+      "MainFeeder_endVoltages_bus19_27_": 0.010723665831275021,
+      "Head_endLateralVoltages_bus28_50_": 0.040187715666322149,
+      "LongLateralVoltages_bus53_60_": 0.0045955219821753358,
+      "LongLateralEndVoltages_bus61_65_": 0.015309246819860406,
+      "Main_feederLoad_bus2_27_51_52_66_69_": 0.087471281947187,
+      "LateralLoad_bus28_50_53_65_": 0.056687461105949181,
+      "PVActiveOutput": 2.6335887212458256E-6,
+      "AggregateLoadLevel": -0.0022519386743896377,
+      "TimeOfDay": 0.011925579052334212,
+      "PreviousControlAction": 0.0054740114299666881
+    },
+    "top_features": [
+      {
+        "name": "Main-feeder load (bus 2-27, 51-52, 66-69)",
+        "value": 0.087471281947187,
+        "share": 0.35325394613424488
+      },
+      {
+        "name": "Lateral load (bus 28-50, 53-65)",
+        "value": 0.056687461105949181,
+        "share": 0.22893307250371289
+      },
+      {
+        "name": "Head-end lateral voltages (bus 28-50)",
+        "value": 0.040187715666322149,
+        "share": 0.16229862909544177
+      },
+      {
+        "name": "Long lateral end voltages (bus 61-65)",
+        "value": 0.015309246819860406,
+        "share": 0.061826598754138255
+      },
+      {
+        "name": "Time of day",
+        "value": 0.011925579052334212,
+        "share": 0.048161611061291042
+      }
+    ],
+    "reward": -0.66680492875338282,
+    "Vmin": 0.95572821180830969,
+    "Vmax": 1.0297390332155916,
+    "lossKW": 133.49190370336996,
+    "nViolated": 0
+  }
+]
