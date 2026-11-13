@@ -1,6 +1,6 @@
 # XRL-LLM: Explainable Reinforcement Learning with Natural-Language Justifications for Volt/VAR Control
 
-[![DOI](https://zenodo.org/badge/DOI/ZENODO_DOI.svg)](https://doi.org/ZENODO_DOI)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24190501.svg)](https://doi.org/10.5281/zenodo.24190501)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2025b-orange.svg)](https://www.mathworks.com/products/matlab.html)
 
@@ -132,8 +132,8 @@ If you use this code, please cite the paper and the archived software. GitHub's 
   year      = {2026},
   version   = {v1.0},
   publisher = {Zenodo},
-  doi       = {ZENODO_DOI},
-  url       = {https://doi.org/ZENODO_DOI}
+  doi       = {10.5281/zenodo.24190501},
+  url       = {https://doi.org/10.5281/zenodo.24190501}
 }
 ```
 

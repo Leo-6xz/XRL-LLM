@@ -11,6 +11,14 @@ abstract: >-
 version: v1.0
 date-released: 2026-11-13
 license: MIT
+doi: 10.5281/zenodo.24190501
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24190501
+    description: "Version DOI for v1.0"
+  - type: doi
+    value: 10.5281/zenodo.24190500
+    description: "Concept DOI (all versions)"
 repository-code: "https://github.com/Leo-6xz/XRL-LLM"
 authors:
   - family-names: Ogar
